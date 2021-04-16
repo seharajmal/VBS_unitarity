@@ -6,6 +6,6 @@ In this repo we are going to collect: MG datacards, plotting tools from ROOT and
 # Log Book
 Please keep this Log Book up to date, so can remember what's happening!
 
-Codici SM definitivi
+Codici SM definitivi:
 Genera diagrammi e ampiezze dei processi VBS ssWW nel caso SM per poi calcolarle per diverse combinazioni di polarizzazioni 
 degli stati iniziali e finali (+-+-, ++++, 0000, 0+0+,0++0, +--+)
