@@ -1,0 +1,6 @@
+/home/nyykki/Scrivania/histos_root/all_pt
+/home/nyykki/Scrivania/histos_root/histos4datacards/merge
+/home/nyykki/Scrivania/histos_root/all_Eta
+/home/nyykki/Scrivania/histos_root/all_mll
+/home/nyykki/Scrivania/histos_root/all_mjj
+/home/nyykki/Scrivania/histos_root/histos4datacards/merge_multipart
