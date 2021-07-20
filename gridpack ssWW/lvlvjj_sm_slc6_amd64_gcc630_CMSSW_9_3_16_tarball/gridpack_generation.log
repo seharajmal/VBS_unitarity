@@ -1,0 +1,2288 @@
+Starting job on  Thu Sep 17 00:53:08 CST 2020
+Running on  Linux farm.phy.pku.edu.cn 2.6.32-696.el6.x86_64 #1 SMP Tue Mar 21 16:21:25 CDT 2017 x86_64 x86_64 x86_64 GNU/Linux
+System release  Scientific Linux release 6.9 (Carbon)
+name: lvlvjj_sm
+carddir: cards/lvlvjj_sm
+queue: condor
+scram_arch: slc6_amd64_gcc630
+cmssw_version: CMSSW_9_3_16
+# On branch master
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    cards/production/13TeV/VBS/SSWW_RcW_bsm/SSWW_RcW_bsm_extramodels.dat
+#	deleted:    cards/production/13TeV/VBS/SSWW_RcW_bsm/SSWW_RcW_bsm_proc_card.dat
+#	deleted:    cards/production/13TeV/VBS/SSWW_RcW_bsm/SSWW_RcW_bsm_run_card.dat
+#	modified:   gridpack_generation.sh
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	SSWW_RcW_bsm.log
+#	SSWW_RcW_bsm/
+#	SSWW_RcW_bsm_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+#	VBS_SSWW_cHWB_bsm.debug
+#	VBS_SSWW_cHWB_bsm.log
+#	VBS_SSWW_cHWB_int.debug
+#	VBS_SSWW_cHWB_int.log
+#	VBS_SSWW_cHW_bsm_2016.debug
+#	VBS_SSWW_cHW_bsm_2016.log
+#	VBS_SSWW_cHW_int_2016.debug
+#	VBS_SSWW_cHW_int_2016.log
+#	VBS_SSWW_cW_bsm.debug
+#	VBS_SSWW_cW_bsm.log
+#	VBS_SSWW_cW_bsm_2016.debug
+#	VBS_SSWW_cW_bsm_2016.log
+#	VBS_SSWW_cW_cHW.debug
+#	VBS_SSWW_cW_cHW.log
+#	VBS_SSWW_cW_cHW_2016.debug
+#	VBS_SSWW_cW_cHW_2016.log
+#	VBS_SSWW_cW_int.debug
+#	VBS_SSWW_cW_int.log
+#	VBS_SSWW_cW_int_2016.debug
+#	VBS_SSWW_cW_int_2016.log
+#	WWjj_1.log
+#	WWjj_1/
+#	WWjj_1_new.log
+#	WWjj_1_new_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+#	WWjj_1_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+#	WWjj_SS_ewk.log
+#	WWjj_SS_ewk/
+#	WWjj_SS_ewk_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+#	cards/SSWW_RcW_bsm/
+#	cards/VBS_SSWW_cqq31_int/
+#	cards/VBS_SSWW_cqq3_bsm_new/
+#	cards/VBS_SSWW_cqq3_full_new/
+#	cards/VBS_SSWW_cqq3_int/
+#	cards/VBS_SSWW_cqq3_int_new/
+#	cards/WWjj_01/
+#	cards/WWjj_1/
+#	cards/WWjj_1_new/
+#	cards/WWjj_SS_ewk/
+#	cards/eft/
+#	cards/eft_2016/
+#	cards/lvlvjj_1/
+#	cards/lvlvjj_bsm_cW/
+#	cards/lvlvjj_cHWB_cll1/
+#	cards/lvlvjj_cW_cHW/
+#	cards/lvlvjj_lin_1/
+#	cards/lvlvjj_qua_1/
+#	cards/lvlvjj_sm/
+#	cards/lvlvjj_sm_2016/
+#	cards/lvlvjj_sm_non_smeft/
+#	cards/submit_jobs.py
+#	lvlvjj_1.log
+#	lvlvjj_1/
+#	lvlvjj_1_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+#	lvlvjj_bsm_cW.log
+#	lvlvjj_bsm_cW/
+#	lvlvjj_cHWB_cll1.log
+#	lvlvjj_cHWB_cll1/
+#	lvlvjj_cHWB_cll1_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+#	lvlvjj_cW_cHW.log
+#	lvlvjj_cW_cHW/
+#	lvlvjj_cW_cHW_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+#	lvlvjj_lin_1.log
+#	lvlvjj_lin_1/
+#	lvlvjj_lin_1_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+#	lvlvjj_qua_1.log
+#	lvlvjj_qua_1/
+#	lvlvjj_qua_1_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+#	lvlvjj_sm.debug
+#	lvlvjj_sm.log
+#	lvlvjj_sm_2016.debug
+#	lvlvjj_sm_2016.log
+#	lvlvjj_sm_non_smeft.debug
+#	lvlvjj_sm_non_smeft.log
+#	lvlvjj_sm_non_smeft/
+#	lvlvjj_sm_non_smeft_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+#	old/
+#	old_SSWW_RcW_bsm/
+#	patches/9990-support-pkucluster-condor.patch
+#	test/
+no changes added to commit (use "git add" and/or "git commit -a")
+Current git revision is:
+dc48be7f4dc454a3e336cd1f25349c889d9e1e76
+diff --git a/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/SSWW_RcW_bsm/SSWW_RcW_bsm_extramodels.dat b/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/SSWW_RcW_bsm/SSWW_RcW_bsm_extramodels.dat
+deleted file mode 100644
+index 0b15794..0000000
+--- a/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/SSWW_RcW_bsm/SSWW_RcW_bsm_extramodels.dat
++++ /dev/null
+@@ -1,2 +0,0 @@
+-# customized model for EWdim8 EFT in 5f 
+-SMEFTsim_A_U35_MwScheme_UFO_v2.1.tar.gz
+diff --git a/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/SSWW_RcW_bsm/SSWW_RcW_bsm_proc_card.dat b/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/SSWW_RcW_bsm/SSWW_RcW_bsm_proc_card.dat
+deleted file mode 100644
+index d29921f..0000000
+--- a/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/SSWW_RcW_bsm/SSWW_RcW_bsm_proc_card.dat
++++ /dev/null
+@@ -1,15 +0,0 @@
+-set group_subprocesses Auto
+-set ignore_six_quark_processes False
+-set loop_optimized_output True
+-set complex_mass_scheme False
+-import model SMEFTsim_A_U35_MwScheme_UFO_v2_1-cW_massless
+-define p = g u c d s b u~ c~ d~ s~ b~
+-define j = p
+-define l+ = e+ mu+ ta+
+-define l- = e- mu- ta-
+-define vl = ve vm vt
+-define vl~ = ve~ vm~ vt~
+-
+-generate p p > l+ l+ vl vl j j QCD=0 SMHLOOP=0 NP=1 NP^2==2 @1
+-add process p p > l- l- vl~ vl~ j j QCD=0 SMHLOOP=0 NP=1 NP^2==2 @2
+-output SSWW_RcW_bsm
+diff --git a/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/SSWW_RcW_bsm/SSWW_RcW_bsm_run_card.dat b/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/SSWW_RcW_bsm/SSWW_RcW_bsm_run_card.dat
+deleted file mode 100644
+index bc6d17f..0000000
+--- a/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/SSWW_RcW_bsm/SSWW_RcW_bsm_run_card.dat
++++ /dev/null
+@@ -1,271 +0,0 @@
+-#*********************************************************************
+-#                       MadGraph5_aMC@NLO                            *
+-#                                                                    *
+-#                     run_card.dat MadEvent                          *
+-#                                                                    *
+-#  This file is used to set the parameters of the run.               *
+-#                                                                    *
+-#  Some notation/conventions:                                        *
+-#                                                                    *
+-#   Lines starting with a '# ' are info or comments                  *
+-#                                                                    *
+-#   mind the format:   value    = variable     ! comment             *
+-#*********************************************************************
+-#
+-#*******************
+-# Running parameters
+-#*******************
+-#
+-#*********************************************************************
+-# Tag name for the run (one word)                                    *
+-#*********************************************************************
+-  tag_1    =  run_tag  ! name of the run
+-#*********************************************************************
+-# Run to generate the grid pack                                      *
+-#*********************************************************************
+-  True    =  gridpack   !True = setting up the grid pack
+-#*********************************************************************
+-# Number of events and rnd seed                                      *
+-# Warning: Do not generate more than 1M events in a single run       *
+-# If you want to run Pythia, avoid more than 50k events in a run.    *
+-#*********************************************************************
+-  10000    =  nevents  ! Number of unweighted events requested
+-  0    =  iseed    ! rnd seed (0=assigned automatically=default))
+-#*********************************************************************
+-# Collider type and energy                                           *
+-# lpp: 0=No PDF, 1=proton, -1=antiproton, 2=photon from proton,      *
+-#                                         3=photon from electron     *
+-#*********************************************************************
+-  1    =  lpp1     ! beam 1 type
+-  1    =  lpp2     ! beam 2 type
+-  6500.0    =  ebeam1   ! beam 1 total energy in GeV
+-  6500.0    =  ebeam2   ! beam 2 total energy in GeV
+-#*********************************************************************
+-# Beam polarization from -100 (left-handed) to 100 (right-handed)    *
+-#*********************************************************************
+-  0.0    =  polbeam1  ! beam polarization for beam 1
+-  0.0    =  polbeam2  ! beam polarization for beam 2
+-#*********************************************************************
+-# PDF CHOICE: this automatically fixes also alpha_s and its evol.    *
+-#*********************************************************************
+-  lhapdf = pdlabel ! PDF set
+-  $DEFAULT_PDF_SETS = lhaid
+-  $DEFAULT_PDF_MEMBERS = reweight_PDF  
+-#*********************************************************************
+-# Renormalization and factorization scales                           *
+-#*********************************************************************
+-  False    =  fixed_ren_scale   ! if .true. use fixed ren scale
+-  False    =  fixed_fac_scale   ! if .true. use fixed fac scale
+-  91.188    =  scale             ! fixed ren scale
+-  91.188    =  dsqrt_q2fact1     ! fixed fact scale for pdf1
+-  91.188    =  dsqrt_q2fact2     ! fixed fact scale for pdf2
+-  1.0    =  scalefact         ! scale factor for event-by-event scales
+-#*********************************************************************
+-# Matching - Warning! ickkw > 1 is still beta
+-#*********************************************************************
+-  0    =  ickkw             ! 0 no matching, 1 MLM, 2 CKKW matching
+-  1    =  highestmult       ! for ickkw=2, highest mult group
+-  1    =  ktscheme          ! for ickkw=1, 1 Durham kT, 2 Pythia pTE
+-  1.0    =  alpsfact          ! scale factor for QCD emission vx
+-  False    =  chcluster         ! cluster only according to channel diag
+-  True    =  pdfwgt            ! for ickkw=1, perform pdf reweighting
+-  5    =  asrwgtflavor      ! highest quark flavor for a_s reweight
+-  True    =  clusinfo          ! include clustering tag in output
+-  3.0    =  lhe_version        ! Change the way clustering information pass to shower.
+-#*********************************************************************
+-#**********************************************************
+-#
+-#**********************************************************
+-# Automatic ptj and mjj cuts if xqcut > 0
+-# (turn off for VBF and single top processes)
+-#**********************************************************
+-  False    =  auto_ptj_mjj   ! Automatic setting of ptj and mjj
+-#**********************************************************
+-#
+-#**********************************
+-# BW cutoff (M+/-bwcutoff*Gamma)
+-#**********************************
+-  15.0    =  bwcutoff       ! (M+/-bwcutoff*Gamma)
+-#**********************************************************
+-# Apply pt/E/eta/dr/mij/kt_durham cuts on decay products or not
+-# (note that etmiss/ptll/ptheavy/ht/sorted cuts always apply)
+-#*************************************************************
+-  True    =  cut_decays     ! Cut decay products
+-#*************************************************************
+-# Number of helicities to sum per event (0 = all helicities)
+-# 0 gives more stable result, but longer run time (needed for
+-# long decay chains e.g.).
+-# Use >=2 if most helicities contribute, e.g. pure QCD.
+-#*************************************************************
+-  0    =  nhel           ! Number of helicities used per event
+-#*******************
+-# Standard Cuts
+-#*******************
+-#
+-#*********************************************************************
+-# Minimum and maximum pt's (for max, -1 means no cut)                *
+-#*********************************************************************
+-  10.0    =  ptj        ! minimum pt for the jets
+-  0.0    =  ptb        ! minimum pt for the b
+-  0.0    =  pta        ! minimum pt for the photons
+-  0.0    =  ptl        ! minimum pt for the charged leptons
+-  0.0    =  misset     ! minimum missing Et (sum of neutrino's momenta)
+-  0.0    =  ptheavy    ! minimum pt for one heavy final state
+-  1.0   = ptonium     ! minimum pt for the quarkonium states
+-  -1.0    =  ptjmax     ! maximum pt for the jets
+-  -1.0    =  ptbmax     ! maximum pt for the b
+-  -1.0    =  ptamax     ! maximum pt for the photons
+-  -1.0    =  ptlmax     ! maximum pt for the charged leptons
+-  -1.0    =  missetmax  ! maximum missing Et (sum of neutrino's momenta)
+-#*********************************************************************
+-# Minimum and maximum E's (in the center of mass frame)              *
+-#*********************************************************************
+-  0.0    =  ej      ! minimum E for the jets
+-  0.0    =  eb      ! minimum E for the b
+-  0.0    =  ea      ! minimum E for the photons
+-  0.0    =  el      ! minimum E for the charged leptons
+-  -1.0    =  ejmax  ! maximum E for the jets
+-  -1.0    =  ebmax  ! maximum E for the b
+-  -1.0    =  eamax  ! maximum E for the photons
+-  -1.0    =  elmax  ! maximum E for the charged leptons
+-#*********************************************************************
+-# Maximum and minimum absolute rapidity (for max, -1 means no cut)   *
+-#*********************************************************************
+-  6.5    =  etaj     ! max rap for the jets
+-  -1    =  etab     ! max rap for the b
+-  2.5    =  etaa     ! max rap for the photons
+-  -1.0    =  etal     ! max rap for the charged leptons
+-  0.6   = etaonium  ! max rap for the quarkonium states
+-  0.0    =  etajmin  ! min rap for the jets
+-  0.0    =  etabmin  ! min rap for the b
+-  0.0    =  etaamin  ! min rap for the photons
+-  0.0    =  etalmin  ! main rap for the charged leptons
+-#*********************************************************************
+-# Minimum and maximum DeltaR distance                                *
+-#*********************************************************************
+-  0.4    =  drjj     ! min distance between jets
+-  0.0    =  drbb     ! min distance between b's
+-  0.4    =  drll     ! min distance between leptons
+-  0.0    =  draa     ! min distance between gammas
+-  0.0    =  drbj     ! min distance between b and jet
+-  0.0    =  draj     ! min distance between gamma and jet
+-  0.4    =  drjl     ! min distance between jet and lepton
+-  0.0    =  drab     ! min distance between gamma and b
+-  0.0    =  drbl     ! min distance between b and lepton
+-  0.0    =  dral     ! min distance between gamma and lepton
+-  -1.0    =  drjjmax  ! max distance between jets
+-  -1.0    =  drbbmax  ! max distance between b's
+-  -1.0    =  drllmax  ! max distance between leptons
+-  -1.0    =  draamax  ! max distance between gammas
+-  -1.0    =  drbjmax  ! max distance between b and jet
+-  -1.0    =  drajmax  ! max distance between gamma and jet
+-  -1.0    =  drjlmax  ! max distance between jet and lepton
+-  -1.0    =  drabmax  ! max distance between gamma and b
+-  -1.0    =  drblmax  ! max distance between b and lepton
+-  -1.0    =  dralmax  ! maxdistance between gamma and lepton
+-#*********************************************************************
+-# Minimum and maximum invariant mass for pairs                       *
+-# WARNING: for four lepton final state mmll cut require to have      *
+-#          different lepton masses for each flavor!                  *
+-#*********************************************************************
+-  100.0    =  mmjj     ! min invariant mass of a jet pair
+-  0.0    =  mmbb     ! min invariant mass of a b pair
+-  0.0    =  mmaa     ! min invariant mass of gamma gamma pair
+-  0.0    =  mmll     ! min invariant mass of l+l- (same flavour) lepton pair
+-  -1.0    =  mmjjmax  ! max invariant mass of a jet pair
+-  -1.0    =  mmbbmax  ! max invariant mass of a b pair
+-  -1.0    =  mmaamax  ! max invariant mass of gamma gamma pair
+-  -1.0    =  mmllmax  ! max invariant mass of l+l- (same flavour) lepton pair
+-#*********************************************************************
+-# Minimum and maximum invariant mass for all letpons                 *
+-#*********************************************************************
+-  0.0    =  mmnl     ! min invariant mass for all letpons (l+- and vl)
+-  -1.0    =  mmnlmax  ! max invariant mass for all letpons (l+- and vl)
+-#*********************************************************************
+-# Minimum and maximum pt for 4-momenta sum of leptons                *
+-#*********************************************************************
+-  0.0    =  ptllmin   ! Minimum pt for 4-momenta sum of leptons(l and vl)
+-  -1.0    =  ptllmax   ! Maximum pt for 4-momenta sum of leptons(l and vl)
+-#*********************************************************************
+-# Inclusive cuts                                                     *
+-#*********************************************************************
+-  0.0    =  xptj  ! minimum pt for at least one jet
+-  0.0    =  xptb  ! minimum pt for at least one b
+-  0.0    =  xpta  ! minimum pt for at least one photon
+-  0.0    =  xptl  ! minimum pt for at least one charged lepton
+-#*********************************************************************
+-# Control the pt's of the jets sorted by pt                          *
+-#*********************************************************************
+-  0.0    =  ptj1min  ! minimum pt for the leading jet in pt
+-  0.0    =  ptj2min  ! minimum pt for the second jet in pt
+-  0.0    =  ptj3min  ! minimum pt for the third jet in pt
+-  0.0    =  ptj4min  ! minimum pt for the fourth jet in pt
+-  -1.0    =  ptj1max  ! maximum pt for the leading jet in pt
+-  -1.0    =  ptj2max  ! maximum pt for the second jet in pt
+-  -1.0    =  ptj3max  ! maximum pt for the third jet in pt
+-  -1.0    =  ptj4max  ! maximum pt for the fourth jet in pt
+-  0    =  cutuse   ! reject event if fails any (0) / all (1) jet pt cuts
+-#*********************************************************************
+-# Control the pt's of leptons sorted by pt                           *
+-#*********************************************************************
+-  0.0    =  ptl1min  ! minimum pt for the leading lepton in pt
+-  0.0    =  ptl2min  ! minimum pt for the second lepton in pt
+-  0.0    =  ptl3min  ! minimum pt for the third lepton in pt
+-  0.0    =  ptl4min  ! minimum pt for the fourth lepton in pt
+-  -1.0    =  ptl1max  ! maximum pt for the leading lepton in pt
+-  -1.0    =  ptl2max  ! maximum pt for the second lepton in pt
+-  -1.0    =  ptl3max  ! maximum pt for the third lepton in pt
+-  -1.0    =  ptl4max  ! maximum pt for the fourth lepton in pt
+-#*********************************************************************
+-# Control the Ht(k)=Sum of k leading jets                            *
+-#*********************************************************************
+-  0.0    =  htjmin  ! minimum jet HT=Sum(jet pt)
+-  -1.0    =  htjmax  ! maximum jet HT=Sum(jet pt)
+-  0.0    =  ihtmin   !inclusive Ht for all partons (including b)
+-  -1.0    =  ihtmax   !inclusive Ht for all partons (including b)
+-  0.0    =  ht2min  ! minimum Ht for the two leading jets
+-  0.0    =  ht3min  ! minimum Ht for the three leading jets
+-  0.0    =  ht4min  ! minimum Ht for the four leading jets
+-  -1.0    =  ht2max  ! maximum Ht for the two leading jets
+-  -1.0    =  ht3max  ! maximum Ht for the three leading jets
+-  -1.0    =  ht4max  ! maximum Ht for the four leading jets
+-#***********************************************************************
+-# Photon-isolation cuts, according to hep-ph/9801442                   *
+-# When ptgmin=0, all the other parameters are ignored                  *
+-# When ptgmin>0, pta and draj are not going to be used                 *
+-#***********************************************************************
+-  0.0    =  ptgmin  ! Min photon transverse momentum
+-  0.4    =  R0gamma  ! Radius of isolation code
+-  1.0    =  xn  ! n parameter of eq.(3.4) in hep-ph/9801442
+-  1.0    =  epsgamma  ! epsilon_gamma parameter of eq.(3.4) in hep-ph/9801442
+-  True    =  isoEM  ! isolate photons from EM energy (photons and leptons)
+-#*********************************************************************
+-# WBF cuts                                                           *
+-#*********************************************************************
+-  0.0    =  xetamin  ! minimum rapidity for two jets in the WBF case
+-  0.0    =  deltaeta  ! minimum rapidity for two jets in the WBF case
+-#*********************************************************************
+-# KT DURHAM CUT                                                      *
+-#*********************************************************************
+-  -1.0    =   ktdurham
+-   0.4    =   dparameter
+- #*********************************************************************
+-# maximal pdg code for quark to be considered as a light jet         *
+-# (otherwise b cuts are applied)                                     *
+-#*********************************************************************
+-  5    =  maxjetflavor     ! Maximum jet pdg code
+-#*********************************************************************
+-# Jet measure cuts                                                   *
+-#*********************************************************************
+-  0.0    =  xqcut    ! minimum kt jet measure between partons
+-#*********************************************************************
+-#
+-#*********************************************************************
+-# Store info for systematics studies                                 *
+-# WARNING: If use_syst is T, matched Pythia output is                *
+-#          meaningful ONLY if plotted taking matchscale              *
+-#          reweighting into account!                                 *
+-#*********************************************************************
+-  True    =  use_syst       ! Enable systematics studies
+-#
+-#**************************************
+diff --git a/bin/MadGraph5_aMCatNLO/gridpack_generation.sh b/bin/MadGraph5_aMCatNLO/gridpack_generation.sh
+index 2575c20..ab09f1a 100755
+--- a/bin/MadGraph5_aMCatNLO/gridpack_generation.sh
++++ b/bin/MadGraph5_aMCatNLO/gridpack_generation.sh
+@@ -167,10 +167,10 @@ make_gridpack () {
+       
+           echo "set run_mode  1" >> mgconfigscript
+           if [ "$queue" == "condor" ]; then
+-            echo "set cluster_type cms_condor" >> mgconfigscript
++            echo "set cluster_type condor" >> mgconfigscript
+             echo "set cluster_queue None" >> mgconfigscript
+           elif [ "$queue" == "condor_spool" ]; then
+-            echo "set cluster_type cms_condor_spool" >> mgconfigscript
++            echo "set cluster_type condor_spool" >> mgconfigscript
+             echo "set cluster_queue None" >> mgconfigscript
+           else
+             echo "set cluster_type cms_lsf" >> mgconfigscript
+@@ -212,7 +212,8 @@ make_gridpack () {
+           #get needed BSM model
+           if [[ $model = *[!\ ]* ]]; then
+             echo "Loading extra model $model"
+-            wget --no-check-certificate https://cms-project-generators.web.cern.ch/cms-project-generators/$model	
++            #wget --no-check-certificate http://stash.osgconnect.net/+jiexiao/$model	
++            wget --no-check-certificate http://stash.osgconnect.net/+jiexiao/$model
+             cd models
+             if [[ $model == *".zip"* ]]; then
+               unzip ../$model
+@@ -283,11 +284,11 @@ make_gridpack () {
+        elif [ "$queue" == "condor" ]; then
+          echo "cluster_queue = None" >> ./$MGBASEDIRORIG/input/mg5_configuration.txt
+          echo "run_mode = 1" >> ./$MGBASEDIRORIG/input/mg5_configuration.txt
+-         echo "cluster_type = cms_condor" >> ./$MGBASEDIRORIG/input/mg5_configuration.txt
++         echo "cluster_type = condor" >> ./$MGBASEDIRORIG/input/mg5_configuration.txt
+        elif [ "$queue" == "condor_spool" ]; then
+          echo "cluster_queue = None" >> ./$MGBASEDIRORIG/input/mg5_configuration.txt
+          echo "run_mode = 1" >> ./$MGBASEDIRORIG/input/mg5_configuration.txt
+-         echo "cluster_type = cms_condor_spool" >> ./$MGBASEDIRORIG/input/mg5_configuration.txt
++         echo "cluster_type = condor_spool" >> ./$MGBASEDIRORIG/input/mg5_configuration.txt
+        fi
+     
+       # Previous cluster_local_path setting  gets erased after
+/home/pku/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO
+patching file models/loop_qcd_qed_sm/restrict_lepton_masses_no_lepton_yukawas.dat
+patching file models/loop_sm/restrict_ckm_no_b_mass.dat
+patching file models/sm/restrict_ckm_lepton_masses.dat
+patching file models/sm/restrict_ckm_lepton_masses_no_b_mass.dat
+patching file models/sm/restrict_ckm_no_b_mass.dat
+patching file models/sm/restrict_lepton_masses_no_b_mass.dat
+patching file Template/NLO/SubProcesses/MCmasses_PYTHIA8.inc
+patching file madgraph/interface/reweight_interface.py
+patching file madgraph/interface/loop_interface.py
+patching file madgraph/various/systematics.py
+Hunk #1 succeeded at 325 (offset 97 lines).
+Hunk #2 succeeded at 359 (offset 98 lines).
+Hunk #3 succeeded at 533 (offset 117 lines).
+patching file Template/LO/Source/.make_opts
+Hunk #1 succeeded at 118 (offset 4 lines).
+patching file Template/NLO/Source/make_opts.inc
+patching file madgraph/iolibs/export_v4.py
+Hunk #1 succeeded at 521 (offset 23 lines).
+patching file madgraph/iolibs/template_files/pdf_opendata.f
+patching file madgraph/iolibs/template_files/pdf_wrap_lhapdf.f
+Hunk #2 succeeded at 38 with fuzz 1.
+patching file Template/LO/SubProcesses/refine.sh
+patching file Template/LO/SubProcesses/refine_splitted.sh
+patching file Template/LO/SubProcesses/survey.sh
+patching file Template/NLO/SubProcesses/ajob_template
+patching file Template/NLO/SubProcesses/reweight_xsec_events.local
+patching file Template/LO/Source/.make_opts
+Hunk #1 succeeded at 100 (offset 4 lines).
+patching file Template/LO/Source/PDF/pdf_lhapdf6.cc
+Hunk #1 succeeded at 16 with fuzz 2 (offset 4 lines).
+patching file Template/NLO/Source/PDF/pdf_lhapdf6.cc
+Hunk #1 succeeded at 16 with fuzz 2 (offset 4 lines).
+patching file Template/NLO/Source/make_opts.inc
+patching file madgraph/iolibs/template_files/pdf_wrap_lhapdf.f
+patching file Template/LO/SubProcesses/refine.sh
+Hunk #3 succeeded at 113 with fuzz 2.
+patching file Template/LO/SubProcesses/refine_splitted.sh
+patching file Template/LO/SubProcesses/survey.sh
+patching file Template/NLO/SubProcesses/ajob_template
+patching file Template/NLO/SubProcesses/reweight_xsec_events.local
+patching file madgraph/interface/reweight_interface.py
+Hunk #1 succeeded at 1885 (offset 37 lines).
+patching file madgraph/interface/common_run_interface.py
+Hunk #1 succeeded at 1701 (offset 101 lines).
+patching file Template/LO/SubProcesses/refine.sh
+patching file Template/LO/SubProcesses/refine_splitted.sh
+patching file Template/LO/SubProcesses/survey.sh
+patching file Template/NLO/SubProcesses/ajob_template
+patching file Template/NLO/SubProcesses/reweight_xsec_events.local
+patching file madgraph/various/misc.py
+Hunk #1 succeeded at 450 (offset 48 lines).
+patching file madgraph/interface/amcatnlo_run_interface.py
+patching file madgraph/interface/madevent_interface.py
+Hunk #1 succeeded at 6598 (offset 17 lines).
+Hunk #2 succeeded at 6614 (offset 17 lines).
+patching file MadSpin/decay.py
+patching file Template/NLO/SubProcesses/handling_lhe_events.f
+patching file madgraph/interface/amcatnlo_run_interface.py
+patching file madgraph/interface/reweight_interface.py
+patching file Template/NLO/SubProcesses/driver_mintFO.f
+patching file Template/NLO/SubProcesses/driver_mintMC.f
+patching file Template/NLO/SubProcesses/reweight_xsec_events.cmd
+patching file Template/NLO/SubProcesses/write_ajob.f
+patching file Template/NLO/Utilities/improve.f
+patching file Template/NLO/Utilities/split_events.f
+patching file madgraph/various/cluster.py
+Hunk #1 succeeded at 871 with fuzz 1.
+Hunk #2 succeeded at 949 with fuzz 1.
+local path is not an afs path, batch jobs will use worker node scratch space instead of afs
+[?1034h************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.6.5                 2018-02-03         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+import /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/MG5_aMC_v2_6_5/mgconfigscript
+The import format was not given, so we guess it as command
+set auto_update 0
+save options auto_update
+save configuration file to /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+set automatic_html_opening False
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set lhapdf /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-ghjeda2/share/LHAPDF/../../bin/lhapdf-config
+set lhapdf to /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-ghjeda2/share/LHAPDF/../../bin/lhapdf-config
+save options lhapdf
+save configuration file to /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+set run_mode  1
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set cluster_type condor
+save options cluster_type
+save configuration file to /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+set cluster_queue None
+save options cluster_queue
+save configuration file to /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+set cluster_status_update 60 30
+save options cluster_status_update
+save configuration file to /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+set cluster_nb_retry 3
+save options cluster_nb_retry
+save configuration file to /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+set cluster_retry_wait 300
+save options cluster_retry_wait
+save configuration file to /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+set cluster_retry_wait 30
+save options cluster_retry_wait
+save configuration file to /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+save options
+save configuration file to /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+quit
+Loading extra models specified in /home/pku/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/cards/lvlvjj_sm/lvlvjj_sm_extramodels.dat
+Loading extra model SMEFTsim_A_U35_MwScheme_UFO_v3.tar.gz
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/write_param_card.py
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq3_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl3_cHq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl1_cHu_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cll1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cHu_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cHq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl3_cll1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHe_cHq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cll1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq1_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHe_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_SMlimit_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq3_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHe_cHu_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_cHd_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_cHq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_cll1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHB_cHl3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cHu_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cHl3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cHB_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/couplings.py
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cHe_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cll1_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cqq1_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl3_cHe_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHWB_cHq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHWB_cll1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_cHB_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cll1_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_cHe_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHB_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/param_card.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cHWB_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cHq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/propagators.py
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHd_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHB_cHWB_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHu_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cHd_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/lorentz.py
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl3_cHd_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cqq11_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl1_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq1_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHu_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHWB_cHl1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHB_cHd_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl1_cHq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl1_cll1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHB_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cqq1_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cHq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHe_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHWB_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHu_cll1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHB_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cHWB_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq3_cHd_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_cHl1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHB_cHq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHd_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cHl1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_VBS_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cHDD_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHd_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHWB_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/__init__.py
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHWB_cHu_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/CT_couplings.py
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHB_cHe_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq1_cHu_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl3_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cHl3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHe_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/particles.py
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cHW_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl1_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl3_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHWB_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cqq11_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cHWB_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/object_library.py
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cHB_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cHe_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHWB_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/decays.py
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl1_cHe_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cHe_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_cHWB_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cHB_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHWB_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cHl1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cqq3_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHu_cHd_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl3_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cqq1_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHB_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cHu_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHu_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHe_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq3_cll1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl3_cHu_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/function_library.py
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl1_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl1_cHd_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cHbox_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl1_cHq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHWB_cHl3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq1_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cHd_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cll1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHe_cHd_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_cHu_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cHd_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl3_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cHq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHB_cHq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_cHl3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/parameters.py
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHB_cll1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/coupling_orders.py
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cHl3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHd_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHu_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHd_cll1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cHq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHWB_cHd_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq1_cHd_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/vertices.py
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cll1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHB_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cHDD_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHu_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq3_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl1_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq1_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHe_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq1_cHq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq1_cll1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHWB_cHe_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHe_cHq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHB_cHu_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cHW_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cHq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl3_cHq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHe_cll1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq3_cqq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHbox_cHW_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHB_cHl1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHW_cHq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHd_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHq3_cHu_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cll1_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cW_cHl1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cll1_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHl1_cHl3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHWB_cHq1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_cHDD_cqq11_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_VBS1_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_VBS3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_VBS_cqq3_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_VBS_cll1_cHl3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_VBS0_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_VBS_cqq3_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_VBS_cqq31_massless.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_reweighting.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_reweighting_1.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_reweighting_2.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_reweighting_3.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_reweighting_4.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_reweighting_5.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_ssww_quadratic_1.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_ssww_quadratic_2.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_ssww_quadratic_3.dat
+SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_ssww_quadratic_4.dat
+/home/pku/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work
+[?1034h************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.6.5                 2018-02-03         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from MG5_aMC_v2_6_5/input/mg5_configuration.txt 
+None does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+set lhapdf to /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-ghjeda2/share/LHAPDF/../../bin/lhapdf-config
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+import /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/lvlvjj_sm_proc_card.dat
+The import format was not given, so we guess it as command
+set group_subprocesses Auto
+Set group_subprocesses to Auto
+Note that you need to regenerate all processes
+set ignore_six_quark_processes False
+set loop_optimized_output True
+set loop optimized output to True
+set complex_mass_scheme False
+Complex mass already desactivated.
+import model SMEFTsim_A_U35_MwScheme_UFO_v3_1-SMlimit_massless
+INFO: load particles 
+INFO: load vertices 
+INFO: Restrict model SMEFTsim_A_U35_MwScheme_UFO_v3_1 with file MG5_aMC_v2_6_5/models/SMEFTsim_A_U35_MwScheme_UFO_v3_1/restrict_SMlimit_massless.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g u c d s u~ c~ d~ s~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ t b t~ b~ z w+ h w- ta- ta+
+define p = g u c d s u~ c~ d~ s~
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+define j = p
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+define l+ = e+ mu+ ta+
+Defined multiparticle l+ = e+ mu+ ta+
+define l- = e- mu- ta-
+Defined multiparticle l- = e- mu- ta-
+define vl = ve vm vt
+Defined multiparticle vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+Defined multiparticle vl~ = ve~ vm~ vt~
+generate p p > l+ l+ vl vl j j QCD=0 SMHLOOP=0 @1
+INFO: Trying process: u u > e+ e+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Process has 372 diagrams 
+INFO: Trying process: u u > e+ e+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ e+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Process has 186 diagrams 
+INFO: Trying process: u u > e+ mu+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ mu+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Process has 190 diagrams 
+INFO: Trying process: u u > e+ ta+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > e+ ta+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Process has 372 diagrams 
+INFO: Trying process: u u > mu+ mu+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ mu+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Process has 190 diagrams 
+INFO: Trying process: u u > mu+ ta+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > mu+ ta+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Process has 396 diagrams 
+INFO: Trying process: u u > ta+ ta+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u u > ta+ ta+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Process has 186 diagrams 
+INFO: Trying process: u c > e+ e+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ e+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Process has 93 diagrams 
+INFO: Trying process: u c > e+ mu+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ mu+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Process has 95 diagrams 
+INFO: Trying process: u c > e+ ta+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > e+ ta+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Process has 186 diagrams 
+INFO: Trying process: u c > mu+ mu+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ mu+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Process has 95 diagrams 
+INFO: Trying process: u c > mu+ ta+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > mu+ ta+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: u c > ta+ ta+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Process has 198 diagrams 
+INFO: Trying process: u c > ta+ ta+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Crossed process found for u d~ > e+ e+ ve ve d u~, reuse diagrams. 
+INFO: Crossed process found for u d~ > e+ e+ ve ve s c~, reuse diagrams. 
+INFO: Crossed process found for u d~ > e+ mu+ ve vm d u~, reuse diagrams. 
+INFO: Crossed process found for u d~ > e+ mu+ ve vm s c~, reuse diagrams. 
+INFO: Crossed process found for u d~ > e+ ta+ ve vt d u~, reuse diagrams. 
+INFO: Crossed process found for u d~ > e+ ta+ ve vt s c~, reuse diagrams. 
+INFO: Crossed process found for u d~ > mu+ mu+ vm vm d u~, reuse diagrams. 
+INFO: Crossed process found for u d~ > mu+ mu+ vm vm s c~, reuse diagrams. 
+INFO: Crossed process found for u d~ > mu+ ta+ vm vt d u~, reuse diagrams. 
+INFO: Crossed process found for u d~ > mu+ ta+ vm vt s c~, reuse diagrams. 
+INFO: Crossed process found for u d~ > ta+ ta+ vt vt d u~, reuse diagrams. 
+INFO: Crossed process found for u d~ > ta+ ta+ vt vt s c~, reuse diagrams. 
+INFO: Crossed process found for u s~ > e+ e+ ve ve d c~, reuse diagrams. 
+INFO: Crossed process found for u s~ > e+ mu+ ve vm d c~, reuse diagrams. 
+INFO: Crossed process found for u s~ > e+ ta+ ve vt d c~, reuse diagrams. 
+INFO: Crossed process found for u s~ > mu+ mu+ vm vm d c~, reuse diagrams. 
+INFO: Crossed process found for u s~ > mu+ ta+ vm vt d c~, reuse diagrams. 
+INFO: Crossed process found for u s~ > ta+ ta+ vt vt d c~, reuse diagrams. 
+INFO: Process c u > e+ e+ ve ve d s added to mirror process u c > e+ e+ ve ve d s 
+INFO: Process c u > e+ mu+ ve vm d s added to mirror process u c > e+ mu+ ve vm d s 
+INFO: Process c u > e+ ta+ ve vt d s added to mirror process u c > e+ ta+ ve vt d s 
+INFO: Process c u > mu+ mu+ vm vm d s added to mirror process u c > mu+ mu+ vm vm d s 
+INFO: Process c u > mu+ ta+ vm vt d s added to mirror process u c > mu+ ta+ vm vt d s 
+INFO: Process c u > ta+ ta+ vt vt d s added to mirror process u c > ta+ ta+ vt vt d s 
+INFO: Trying process: c c > e+ e+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Process has 372 diagrams 
+INFO: Trying process: c c > e+ e+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ e+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Process has 186 diagrams 
+INFO: Trying process: c c > e+ mu+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ mu+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Process has 190 diagrams 
+INFO: Trying process: c c > e+ ta+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > e+ ta+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Process has 372 diagrams 
+INFO: Trying process: c c > mu+ mu+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ mu+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Process has 190 diagrams 
+INFO: Trying process: c c > mu+ ta+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > mu+ ta+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ ve ve d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ ve ve d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ ve ve s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ ve vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ ve vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ ve vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ ve vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ ve vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ vm vm d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ vm vm d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ vm vm s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ vm vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ vm vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ vm vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ vt vt d d QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ vt vt d s QCD=0 SMHLOOP=0 @1  
+INFO: Trying process: c c > ta+ ta+ vt vt s s QCD=0 SMHLOOP=0 @1  
+INFO: Process has 396 diagrams 
+INFO: Crossed process found for c d~ > e+ e+ ve ve s u~, reuse diagrams. 
+INFO: Crossed process found for c d~ > e+ mu+ ve vm s u~, reuse diagrams. 
+INFO: Crossed process found for c d~ > e+ ta+ ve vt s u~, reuse diagrams. 
+INFO: Crossed process found for c d~ > mu+ mu+ vm vm s u~, reuse diagrams. 
+INFO: Crossed process found for c d~ > mu+ ta+ vm vt s u~, reuse diagrams. 
+INFO: Crossed process found for c d~ > ta+ ta+ vt vt s u~, reuse diagrams. 
+INFO: Crossed process found for c s~ > e+ e+ ve ve d u~, reuse diagrams. 
+INFO: Crossed process found for c s~ > e+ e+ ve ve s c~, reuse diagrams. 
+INFO: Crossed process found for c s~ > e+ mu+ ve vm d u~, reuse diagrams. 
+INFO: Crossed process found for c s~ > e+ mu+ ve vm s c~, reuse diagrams. 
+INFO: Crossed process found for c s~ > e+ ta+ ve vt d u~, reuse diagrams. 
+INFO: Crossed process found for c s~ > e+ ta+ ve vt s c~, reuse diagrams. 
+INFO: Crossed process found for c s~ > mu+ mu+ vm vm d u~, reuse diagrams. 
+INFO: Crossed process found for c s~ > mu+ mu+ vm vm s c~, reuse diagrams. 
+INFO: Crossed process found for c s~ > mu+ ta+ vm vt d u~, reuse diagrams. 
+INFO: Crossed process found for c s~ > mu+ ta+ vm vt s c~, reuse diagrams. 
+INFO: Crossed process found for c s~ > ta+ ta+ vt vt d u~, reuse diagrams. 
+INFO: Crossed process found for c s~ > ta+ ta+ vt vt s c~, reuse diagrams. 
+INFO: Process d~ u > e+ e+ ve ve d u~ added to mirror process u d~ > e+ e+ ve ve d u~ 
+INFO: Process d~ u > e+ e+ ve ve s c~ added to mirror process u d~ > e+ e+ ve ve s c~ 
+INFO: Process d~ u > e+ mu+ ve vm d u~ added to mirror process u d~ > e+ mu+ ve vm d u~ 
+INFO: Process d~ u > e+ mu+ ve vm s c~ added to mirror process u d~ > e+ mu+ ve vm s c~ 
+INFO: Process d~ u > e+ ta+ ve vt d u~ added to mirror process u d~ > e+ ta+ ve vt d u~ 
+INFO: Process d~ u > e+ ta+ ve vt s c~ added to mirror process u d~ > e+ ta+ ve vt s c~ 
+INFO: Process d~ u > mu+ mu+ vm vm d u~ added to mirror process u d~ > mu+ mu+ vm vm d u~ 
+INFO: Process d~ u > mu+ mu+ vm vm s c~ added to mirror process u d~ > mu+ mu+ vm vm s c~ 
+INFO: Process d~ u > mu+ ta+ vm vt d u~ added to mirror process u d~ > mu+ ta+ vm vt d u~ 
+INFO: Process d~ u > mu+ ta+ vm vt s c~ added to mirror process u d~ > mu+ ta+ vm vt s c~ 
+INFO: Process d~ u > ta+ ta+ vt vt d u~ added to mirror process u d~ > ta+ ta+ vt vt d u~ 
+INFO: Process d~ u > ta+ ta+ vt vt s c~ added to mirror process u d~ > ta+ ta+ vt vt s c~ 
+INFO: Process d~ c > e+ e+ ve ve s u~ added to mirror process c d~ > e+ e+ ve ve s u~ 
+INFO: Process d~ c > e+ mu+ ve vm s u~ added to mirror process c d~ > e+ mu+ ve vm s u~ 
+INFO: Process d~ c > e+ ta+ ve vt s u~ added to mirror process c d~ > e+ ta+ ve vt s u~ 
+INFO: Process d~ c > mu+ mu+ vm vm s u~ added to mirror process c d~ > mu+ mu+ vm vm s u~ 
+INFO: Process d~ c > mu+ ta+ vm vt s u~ added to mirror process c d~ > mu+ ta+ vm vt s u~ 
+INFO: Process d~ c > ta+ ta+ vt vt s u~ added to mirror process c d~ > ta+ ta+ vt vt s u~ 
+INFO: Crossed process found for d~ d~ > e+ e+ ve ve u~ u~, reuse diagrams. 
+INFO: Crossed process found for d~ d~ > e+ mu+ ve vm u~ u~, reuse diagrams. 
+INFO: Crossed process found for d~ d~ > e+ ta+ ve vt u~ u~, reuse diagrams. 
+INFO: Crossed process found for d~ d~ > mu+ mu+ vm vm u~ u~, reuse diagrams. 
+INFO: Crossed process found for d~ d~ > mu+ ta+ vm vt u~ u~, reuse diagrams. 
+INFO: Crossed process found for d~ d~ > ta+ ta+ vt vt u~ u~, reuse diagrams. 
+INFO: Crossed process found for d~ s~ > e+ e+ ve ve u~ c~, reuse diagrams. 
+INFO: Crossed process found for d~ s~ > e+ mu+ ve vm u~ c~, reuse diagrams. 
+INFO: Crossed process found for d~ s~ > e+ ta+ ve vt u~ c~, reuse diagrams. 
+INFO: Crossed process found for d~ s~ > mu+ mu+ vm vm u~ c~, reuse diagrams. 
+INFO: Crossed process found for d~ s~ > mu+ ta+ vm vt u~ c~, reuse diagrams. 
+INFO: Crossed process found for d~ s~ > ta+ ta+ vt vt u~ c~, reuse diagrams. 
+INFO: Process s~ u > e+ e+ ve ve d c~ added to mirror process u s~ > e+ e+ ve ve d c~ 
+INFO: Process s~ u > e+ mu+ ve vm d c~ added to mirror process u s~ > e+ mu+ ve vm d c~ 
+INFO: Process s~ u > e+ ta+ ve vt d c~ added to mirror process u s~ > e+ ta+ ve vt d c~ 
+INFO: Process s~ u > mu+ mu+ vm vm d c~ added to mirror process u s~ > mu+ mu+ vm vm d c~ 
+INFO: Process s~ u > mu+ ta+ vm vt d c~ added to mirror process u s~ > mu+ ta+ vm vt d c~ 
+INFO: Process s~ u > ta+ ta+ vt vt d c~ added to mirror process u s~ > ta+ ta+ vt vt d c~ 
+INFO: Process s~ c > e+ e+ ve ve d u~ added to mirror process c s~ > e+ e+ ve ve d u~ 
+INFO: Process s~ c > e+ e+ ve ve s c~ added to mirror process c s~ > e+ e+ ve ve s c~ 
+INFO: Process s~ c > e+ mu+ ve vm d u~ added to mirror process c s~ > e+ mu+ ve vm d u~ 
+INFO: Process s~ c > e+ mu+ ve vm s c~ added to mirror process c s~ > e+ mu+ ve vm s c~ 
+INFO: Process s~ c > e+ ta+ ve vt d u~ added to mirror process c s~ > e+ ta+ ve vt d u~ 
+INFO: Process s~ c > e+ ta+ ve vt s c~ added to mirror process c s~ > e+ ta+ ve vt s c~ 
+INFO: Process s~ c > mu+ mu+ vm vm d u~ added to mirror process c s~ > mu+ mu+ vm vm d u~ 
+INFO: Process s~ c > mu+ mu+ vm vm s c~ added to mirror process c s~ > mu+ mu+ vm vm s c~ 
+INFO: Process s~ c > mu+ ta+ vm vt d u~ added to mirror process c s~ > mu+ ta+ vm vt d u~ 
+INFO: Process s~ c > mu+ ta+ vm vt s c~ added to mirror process c s~ > mu+ ta+ vm vt s c~ 
+INFO: Process s~ c > ta+ ta+ vt vt d u~ added to mirror process c s~ > ta+ ta+ vt vt d u~ 
+INFO: Process s~ c > ta+ ta+ vt vt s c~ added to mirror process c s~ > ta+ ta+ vt vt s c~ 
+INFO: Process s~ d~ > e+ e+ ve ve u~ c~ added to mirror process d~ s~ > e+ e+ ve ve u~ c~ 
+INFO: Process s~ d~ > e+ mu+ ve vm u~ c~ added to mirror process d~ s~ > e+ mu+ ve vm u~ c~ 
+INFO: Process s~ d~ > e+ ta+ ve vt u~ c~ added to mirror process d~ s~ > e+ ta+ ve vt u~ c~ 
+INFO: Process s~ d~ > mu+ mu+ vm vm u~ c~ added to mirror process d~ s~ > mu+ mu+ vm vm u~ c~ 
+INFO: Process s~ d~ > mu+ ta+ vm vt u~ c~ added to mirror process d~ s~ > mu+ ta+ vm vt u~ c~ 
+INFO: Process s~ d~ > ta+ ta+ vt vt u~ c~ added to mirror process d~ s~ > ta+ ta+ vt vt u~ c~ 
+INFO: Crossed process found for s~ s~ > e+ e+ ve ve c~ c~, reuse diagrams. 
+INFO: Crossed process found for s~ s~ > e+ mu+ ve vm c~ c~, reuse diagrams. 
+INFO: Crossed process found for s~ s~ > e+ ta+ ve vt c~ c~, reuse diagrams. 
+INFO: Crossed process found for s~ s~ > mu+ mu+ vm vm c~ c~, reuse diagrams. 
+INFO: Crossed process found for s~ s~ > mu+ ta+ vm vt c~ c~, reuse diagrams. 
+INFO: Crossed process found for s~ s~ > ta+ ta+ vt vt c~ c~, reuse diagrams. 
+72 processes with 15354 diagrams generated in 167.413 s
+Total: 72 processes with 15354 diagrams
+add process p p > l- l- vl~ vl~ j j QCD=0 SMHLOOP=0 @2
+INFO: Trying process: d d > e- e- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Process has 372 diagrams 
+INFO: Trying process: d d > e- e- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- e- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Process has 186 diagrams 
+INFO: Trying process: d d > e- mu- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- mu- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Process has 190 diagrams 
+INFO: Trying process: d d > e- ta- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > e- ta- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Process has 372 diagrams 
+INFO: Trying process: d d > mu- mu- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- mu- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Process has 190 diagrams 
+INFO: Trying process: d d > mu- ta- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > mu- ta- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Process has 396 diagrams 
+INFO: Trying process: d d > ta- ta- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d d > ta- ta- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Process has 186 diagrams 
+INFO: Trying process: d s > e- e- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- e- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Process has 93 diagrams 
+INFO: Trying process: d s > e- mu- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- mu- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Process has 95 diagrams 
+INFO: Trying process: d s > e- ta- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > e- ta- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Process has 186 diagrams 
+INFO: Trying process: d s > mu- mu- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- mu- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Process has 95 diagrams 
+INFO: Trying process: d s > mu- ta- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > mu- ta- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: d s > ta- ta- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Process has 198 diagrams 
+INFO: Trying process: d s > ta- ta- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Crossed process found for d u~ > e- e- ve~ ve~ u d~, reuse diagrams. 
+INFO: Crossed process found for d u~ > e- e- ve~ ve~ c s~, reuse diagrams. 
+INFO: Crossed process found for d u~ > e- mu- ve~ vm~ u d~, reuse diagrams. 
+INFO: Crossed process found for d u~ > e- mu- ve~ vm~ c s~, reuse diagrams. 
+INFO: Crossed process found for d u~ > e- ta- ve~ vt~ u d~, reuse diagrams. 
+INFO: Crossed process found for d u~ > e- ta- ve~ vt~ c s~, reuse diagrams. 
+INFO: Crossed process found for d u~ > mu- mu- vm~ vm~ u d~, reuse diagrams. 
+INFO: Crossed process found for d u~ > mu- mu- vm~ vm~ c s~, reuse diagrams. 
+INFO: Crossed process found for d u~ > mu- ta- vm~ vt~ u d~, reuse diagrams. 
+INFO: Crossed process found for d u~ > mu- ta- vm~ vt~ c s~, reuse diagrams. 
+INFO: Crossed process found for d u~ > ta- ta- vt~ vt~ u d~, reuse diagrams. 
+INFO: Crossed process found for d u~ > ta- ta- vt~ vt~ c s~, reuse diagrams. 
+INFO: Crossed process found for d c~ > e- e- ve~ ve~ u s~, reuse diagrams. 
+INFO: Crossed process found for d c~ > e- mu- ve~ vm~ u s~, reuse diagrams. 
+INFO: Crossed process found for d c~ > e- ta- ve~ vt~ u s~, reuse diagrams. 
+INFO: Crossed process found for d c~ > mu- mu- vm~ vm~ u s~, reuse diagrams. 
+INFO: Crossed process found for d c~ > mu- ta- vm~ vt~ u s~, reuse diagrams. 
+INFO: Crossed process found for d c~ > ta- ta- vt~ vt~ u s~, reuse diagrams. 
+INFO: Process s d > e- e- ve~ ve~ u c added to mirror process d s > e- e- ve~ ve~ u c 
+INFO: Process s d > e- mu- ve~ vm~ u c added to mirror process d s > e- mu- ve~ vm~ u c 
+INFO: Process s d > e- ta- ve~ vt~ u c added to mirror process d s > e- ta- ve~ vt~ u c 
+INFO: Process s d > mu- mu- vm~ vm~ u c added to mirror process d s > mu- mu- vm~ vm~ u c 
+INFO: Process s d > mu- ta- vm~ vt~ u c added to mirror process d s > mu- ta- vm~ vt~ u c 
+INFO: Process s d > ta- ta- vt~ vt~ u c added to mirror process d s > ta- ta- vt~ vt~ u c 
+INFO: Trying process: s s > e- e- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Process has 372 diagrams 
+INFO: Trying process: s s > e- e- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- e- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Process has 186 diagrams 
+INFO: Trying process: s s > e- mu- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- mu- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Process has 190 diagrams 
+INFO: Trying process: s s > e- ta- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > e- ta- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Process has 372 diagrams 
+INFO: Trying process: s s > mu- mu- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- mu- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Process has 190 diagrams 
+INFO: Trying process: s s > mu- ta- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > mu- ta- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- ve~ ve~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- ve~ ve~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- ve~ ve~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- ve~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- ve~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- ve~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- ve~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- ve~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- vm~ vm~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- vm~ vm~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- vm~ vm~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- vm~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- vm~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- vm~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- vt~ vt~ u u QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- vt~ vt~ u c QCD=0 SMHLOOP=0 @2  
+INFO: Trying process: s s > ta- ta- vt~ vt~ c c QCD=0 SMHLOOP=0 @2  
+INFO: Process has 396 diagrams 
+INFO: Crossed process found for s u~ > e- e- ve~ ve~ c d~, reuse diagrams. 
+INFO: Crossed process found for s u~ > e- mu- ve~ vm~ c d~, reuse diagrams. 
+INFO: Crossed process found for s u~ > e- ta- ve~ vt~ c d~, reuse diagrams. 
+INFO: Crossed process found for s u~ > mu- mu- vm~ vm~ c d~, reuse diagrams. 
+INFO: Crossed process found for s u~ > mu- ta- vm~ vt~ c d~, reuse diagrams. 
+INFO: Crossed process found for s u~ > ta- ta- vt~ vt~ c d~, reuse diagrams. 
+INFO: Crossed process found for s c~ > e- e- ve~ ve~ u d~, reuse diagrams. 
+INFO: Crossed process found for s c~ > e- e- ve~ ve~ c s~, reuse diagrams. 
+INFO: Crossed process found for s c~ > e- mu- ve~ vm~ u d~, reuse diagrams. 
+INFO: Crossed process found for s c~ > e- mu- ve~ vm~ c s~, reuse diagrams. 
+INFO: Crossed process found for s c~ > e- ta- ve~ vt~ u d~, reuse diagrams. 
+INFO: Crossed process found for s c~ > e- ta- ve~ vt~ c s~, reuse diagrams. 
+INFO: Crossed process found for s c~ > mu- mu- vm~ vm~ u d~, reuse diagrams. 
+INFO: Crossed process found for s c~ > mu- mu- vm~ vm~ c s~, reuse diagrams. 
+INFO: Crossed process found for s c~ > mu- ta- vm~ vt~ u d~, reuse diagrams. 
+INFO: Crossed process found for s c~ > mu- ta- vm~ vt~ c s~, reuse diagrams. 
+INFO: Crossed process found for s c~ > ta- ta- vt~ vt~ u d~, reuse diagrams. 
+INFO: Crossed process found for s c~ > ta- ta- vt~ vt~ c s~, reuse diagrams. 
+INFO: Process u~ d > e- e- ve~ ve~ u d~ added to mirror process d u~ > e- e- ve~ ve~ u d~ 
+INFO: Process u~ d > e- e- ve~ ve~ c s~ added to mirror process d u~ > e- e- ve~ ve~ c s~ 
+INFO: Process u~ d > e- mu- ve~ vm~ u d~ added to mirror process d u~ > e- mu- ve~ vm~ u d~ 
+INFO: Process u~ d > e- mu- ve~ vm~ c s~ added to mirror process d u~ > e- mu- ve~ vm~ c s~ 
+INFO: Process u~ d > e- ta- ve~ vt~ u d~ added to mirror process d u~ > e- ta- ve~ vt~ u d~ 
+INFO: Process u~ d > e- ta- ve~ vt~ c s~ added to mirror process d u~ > e- ta- ve~ vt~ c s~ 
+INFO: Process u~ d > mu- mu- vm~ vm~ u d~ added to mirror process d u~ > mu- mu- vm~ vm~ u d~ 
+INFO: Process u~ d > mu- mu- vm~ vm~ c s~ added to mirror process d u~ > mu- mu- vm~ vm~ c s~ 
+INFO: Process u~ d > mu- ta- vm~ vt~ u d~ added to mirror process d u~ > mu- ta- vm~ vt~ u d~ 
+INFO: Process u~ d > mu- ta- vm~ vt~ c s~ added to mirror process d u~ > mu- ta- vm~ vt~ c s~ 
+INFO: Process u~ d > ta- ta- vt~ vt~ u d~ added to mirror process d u~ > ta- ta- vt~ vt~ u d~ 
+INFO: Process u~ d > ta- ta- vt~ vt~ c s~ added to mirror process d u~ > ta- ta- vt~ vt~ c s~ 
+INFO: Process u~ s > e- e- ve~ ve~ c d~ added to mirror process s u~ > e- e- ve~ ve~ c d~ 
+INFO: Process u~ s > e- mu- ve~ vm~ c d~ added to mirror process s u~ > e- mu- ve~ vm~ c d~ 
+INFO: Process u~ s > e- ta- ve~ vt~ c d~ added to mirror process s u~ > e- ta- ve~ vt~ c d~ 
+INFO: Process u~ s > mu- mu- vm~ vm~ c d~ added to mirror process s u~ > mu- mu- vm~ vm~ c d~ 
+INFO: Process u~ s > mu- ta- vm~ vt~ c d~ added to mirror process s u~ > mu- ta- vm~ vt~ c d~ 
+INFO: Process u~ s > ta- ta- vt~ vt~ c d~ added to mirror process s u~ > ta- ta- vt~ vt~ c d~ 
+INFO: Crossed process found for u~ u~ > e- e- ve~ ve~ d~ d~, reuse diagrams. 
+INFO: Crossed process found for u~ u~ > e- mu- ve~ vm~ d~ d~, reuse diagrams. 
+INFO: Crossed process found for u~ u~ > e- ta- ve~ vt~ d~ d~, reuse diagrams. 
+INFO: Crossed process found for u~ u~ > mu- mu- vm~ vm~ d~ d~, reuse diagrams. 
+INFO: Crossed process found for u~ u~ > mu- ta- vm~ vt~ d~ d~, reuse diagrams. 
+INFO: Crossed process found for u~ u~ > ta- ta- vt~ vt~ d~ d~, reuse diagrams. 
+INFO: Crossed process found for u~ c~ > e- e- ve~ ve~ d~ s~, reuse diagrams. 
+INFO: Crossed process found for u~ c~ > e- mu- ve~ vm~ d~ s~, reuse diagrams. 
+INFO: Crossed process found for u~ c~ > e- ta- ve~ vt~ d~ s~, reuse diagrams. 
+INFO: Crossed process found for u~ c~ > mu- mu- vm~ vm~ d~ s~, reuse diagrams. 
+INFO: Crossed process found for u~ c~ > mu- ta- vm~ vt~ d~ s~, reuse diagrams. 
+INFO: Crossed process found for u~ c~ > ta- ta- vt~ vt~ d~ s~, reuse diagrams. 
+INFO: Process c~ d > e- e- ve~ ve~ u s~ added to mirror process d c~ > e- e- ve~ ve~ u s~ 
+INFO: Process c~ d > e- mu- ve~ vm~ u s~ added to mirror process d c~ > e- mu- ve~ vm~ u s~ 
+INFO: Process c~ d > e- ta- ve~ vt~ u s~ added to mirror process d c~ > e- ta- ve~ vt~ u s~ 
+INFO: Process c~ d > mu- mu- vm~ vm~ u s~ added to mirror process d c~ > mu- mu- vm~ vm~ u s~ 
+INFO: Process c~ d > mu- ta- vm~ vt~ u s~ added to mirror process d c~ > mu- ta- vm~ vt~ u s~ 
+INFO: Process c~ d > ta- ta- vt~ vt~ u s~ added to mirror process d c~ > ta- ta- vt~ vt~ u s~ 
+INFO: Process c~ s > e- e- ve~ ve~ u d~ added to mirror process s c~ > e- e- ve~ ve~ u d~ 
+INFO: Process c~ s > e- e- ve~ ve~ c s~ added to mirror process s c~ > e- e- ve~ ve~ c s~ 
+INFO: Process c~ s > e- mu- ve~ vm~ u d~ added to mirror process s c~ > e- mu- ve~ vm~ u d~ 
+INFO: Process c~ s > e- mu- ve~ vm~ c s~ added to mirror process s c~ > e- mu- ve~ vm~ c s~ 
+INFO: Process c~ s > e- ta- ve~ vt~ u d~ added to mirror process s c~ > e- ta- ve~ vt~ u d~ 
+INFO: Process c~ s > e- ta- ve~ vt~ c s~ added to mirror process s c~ > e- ta- ve~ vt~ c s~ 
+INFO: Process c~ s > mu- mu- vm~ vm~ u d~ added to mirror process s c~ > mu- mu- vm~ vm~ u d~ 
+INFO: Process c~ s > mu- mu- vm~ vm~ c s~ added to mirror process s c~ > mu- mu- vm~ vm~ c s~ 
+INFO: Process c~ s > mu- ta- vm~ vt~ u d~ added to mirror process s c~ > mu- ta- vm~ vt~ u d~ 
+INFO: Process c~ s > mu- ta- vm~ vt~ c s~ added to mirror process s c~ > mu- ta- vm~ vt~ c s~ 
+INFO: Process c~ s > ta- ta- vt~ vt~ u d~ added to mirror process s c~ > ta- ta- vt~ vt~ u d~ 
+INFO: Process c~ s > ta- ta- vt~ vt~ c s~ added to mirror process s c~ > ta- ta- vt~ vt~ c s~ 
+INFO: Process c~ u~ > e- e- ve~ ve~ d~ s~ added to mirror process u~ c~ > e- e- ve~ ve~ d~ s~ 
+INFO: Process c~ u~ > e- mu- ve~ vm~ d~ s~ added to mirror process u~ c~ > e- mu- ve~ vm~ d~ s~ 
+INFO: Process c~ u~ > e- ta- ve~ vt~ d~ s~ added to mirror process u~ c~ > e- ta- ve~ vt~ d~ s~ 
+INFO: Process c~ u~ > mu- mu- vm~ vm~ d~ s~ added to mirror process u~ c~ > mu- mu- vm~ vm~ d~ s~ 
+INFO: Process c~ u~ > mu- ta- vm~ vt~ d~ s~ added to mirror process u~ c~ > mu- ta- vm~ vt~ d~ s~ 
+INFO: Process c~ u~ > ta- ta- vt~ vt~ d~ s~ added to mirror process u~ c~ > ta- ta- vt~ vt~ d~ s~ 
+INFO: Crossed process found for c~ c~ > e- e- ve~ ve~ s~ s~, reuse diagrams. 
+INFO: Crossed process found for c~ c~ > e- mu- ve~ vm~ s~ s~, reuse diagrams. 
+INFO: Crossed process found for c~ c~ > e- ta- ve~ vt~ s~ s~, reuse diagrams. 
+INFO: Crossed process found for c~ c~ > mu- mu- vm~ vm~ s~ s~, reuse diagrams. 
+INFO: Crossed process found for c~ c~ > mu- ta- vm~ vt~ s~ s~, reuse diagrams. 
+INFO: Crossed process found for c~ c~ > ta- ta- vt~ vt~ s~ s~, reuse diagrams. 
+72 processes with 15354 diagrams generated in 171.014 s
+Total: 144 processes with 30708 diagrams
+output lvlvjj_sm -nojpeg
+[1;34mPlugin PLUGIN.CMS_CLUSTER has marked as NOT being validated with this version. 
+It has been validated for the last time with version: 2.6.0[0m
+INFO: initialize a new directory: lvlvjj_sm 
+INFO: remove old information in lvlvjj_sm 
+INFO: Organizing processes into subprocess groups 
+INFO: Generating Helas calls for process: u u > ta+ ta+ vt vt d d QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u u > ta+ ta+ vt vt d d QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u d~ > ta+ ta+ vt vt d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u d~ > ta+ ta+ vt vt d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c c > ta+ ta+ vt vt s s QCD=0 SMHLOOP=0 @1 with process u u > ta+ ta+ vt vt d d QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c s~ > ta+ ta+ vt vt s c~ QCD=0 SMHLOOP=0 @1 with process u d~ > ta+ ta+ vt vt d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: d~ d~ > ta+ ta+ vt vt u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: d~ d~ > ta+ ta+ vt vt u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process s~ s~ > ta+ ta+ vt vt c~ c~ QCD=0 SMHLOOP=0 @1 with process d~ d~ > ta+ ta+ vt vt u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u c > ta+ ta+ vt vt d s QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u c > ta+ ta+ vt vt d s QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u d~ > ta+ ta+ vt vt s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u d~ > ta+ ta+ vt vt s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u s~ > ta+ ta+ vt vt d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u s~ > ta+ ta+ vt vt d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c d~ > ta+ ta+ vt vt s u~ QCD=0 SMHLOOP=0 @1 with process u s~ > ta+ ta+ vt vt d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c s~ > ta+ ta+ vt vt d u~ QCD=0 SMHLOOP=0 @1 with process u d~ > ta+ ta+ vt vt s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: d~ s~ > ta+ ta+ vt vt u~ c~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: d~ s~ > ta+ ta+ vt vt u~ c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: d d > ta- ta- vt~ vt~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d d > ta- ta- vt~ vt~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d u~ > ta- ta- vt~ vt~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d u~ > ta- ta- vt~ vt~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s s > ta- ta- vt~ vt~ c c QCD=0 SMHLOOP=0 @2 with process d d > ta- ta- vt~ vt~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s c~ > ta- ta- vt~ vt~ c s~ QCD=0 SMHLOOP=0 @2 with process d u~ > ta- ta- vt~ vt~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: u~ u~ > ta- ta- vt~ vt~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: u~ u~ > ta- ta- vt~ vt~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process c~ c~ > ta- ta- vt~ vt~ s~ s~ QCD=0 SMHLOOP=0 @2 with process u~ u~ > ta- ta- vt~ vt~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d s > ta- ta- vt~ vt~ u c QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d s > ta- ta- vt~ vt~ u c QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d u~ > ta- ta- vt~ vt~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d u~ > ta- ta- vt~ vt~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d c~ > ta- ta- vt~ vt~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d c~ > ta- ta- vt~ vt~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s u~ > ta- ta- vt~ vt~ c d~ QCD=0 SMHLOOP=0 @2 with process d c~ > ta- ta- vt~ vt~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s c~ > ta- ta- vt~ vt~ u d~ QCD=0 SMHLOOP=0 @2 with process d u~ > ta- ta- vt~ vt~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: u~ c~ > ta- ta- vt~ vt~ d~ s~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: u~ c~ > ta- ta- vt~ vt~ d~ s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: u u > e+ e+ ve ve d d QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u u > e+ e+ ve ve d d QCD=0 SMHLOOP=0 @1 
+INFO: Combined process u u > mu+ mu+ vm vm d d QCD=0 SMHLOOP=0 @1 with process u u > e+ e+ ve ve d d QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u d~ > e+ e+ ve ve d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u d~ > e+ e+ ve ve d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process u d~ > mu+ mu+ vm vm d u~ QCD=0 SMHLOOP=0 @1 with process u d~ > e+ e+ ve ve d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c c > e+ e+ ve ve s s QCD=0 SMHLOOP=0 @1 with process u u > e+ e+ ve ve d d QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c c > mu+ mu+ vm vm s s QCD=0 SMHLOOP=0 @1 with process u u > e+ e+ ve ve d d QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c s~ > e+ e+ ve ve s c~ QCD=0 SMHLOOP=0 @1 with process u d~ > e+ e+ ve ve d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c s~ > mu+ mu+ vm vm s c~ QCD=0 SMHLOOP=0 @1 with process u d~ > e+ e+ ve ve d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: d~ d~ > e+ e+ ve ve u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: d~ d~ > e+ e+ ve ve u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process d~ d~ > mu+ mu+ vm vm u~ u~ QCD=0 SMHLOOP=0 @1 with process d~ d~ > e+ e+ ve ve u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process s~ s~ > e+ e+ ve ve c~ c~ QCD=0 SMHLOOP=0 @1 with process d~ d~ > e+ e+ ve ve u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process s~ s~ > mu+ mu+ vm vm c~ c~ QCD=0 SMHLOOP=0 @1 with process d~ d~ > e+ e+ ve ve u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u u > e+ mu+ ve vm d d QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u u > e+ mu+ ve vm d d QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u c > e+ e+ ve ve d s QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u c > e+ e+ ve ve d s QCD=0 SMHLOOP=0 @1 
+INFO: Combined process u c > mu+ mu+ vm vm d s QCD=0 SMHLOOP=0 @1 with process u c > e+ e+ ve ve d s QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u d~ > e+ e+ ve ve s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u d~ > e+ e+ ve ve s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u d~ > e+ mu+ ve vm d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u d~ > e+ mu+ ve vm d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process u d~ > mu+ mu+ vm vm s c~ QCD=0 SMHLOOP=0 @1 with process u d~ > e+ e+ ve ve s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u s~ > e+ e+ ve ve d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u s~ > e+ e+ ve ve d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process u s~ > mu+ mu+ vm vm d c~ QCD=0 SMHLOOP=0 @1 with process u s~ > e+ e+ ve ve d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c c > e+ mu+ ve vm s s QCD=0 SMHLOOP=0 @1 with process u u > e+ mu+ ve vm d d QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c d~ > e+ e+ ve ve s u~ QCD=0 SMHLOOP=0 @1 with process u s~ > e+ e+ ve ve d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c d~ > mu+ mu+ vm vm s u~ QCD=0 SMHLOOP=0 @1 with process u s~ > e+ e+ ve ve d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c s~ > e+ e+ ve ve d u~ QCD=0 SMHLOOP=0 @1 with process u d~ > e+ e+ ve ve s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c s~ > e+ mu+ ve vm s c~ QCD=0 SMHLOOP=0 @1 with process u d~ > e+ mu+ ve vm d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c s~ > mu+ mu+ vm vm d u~ QCD=0 SMHLOOP=0 @1 with process u d~ > e+ e+ ve ve s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: d~ d~ > e+ mu+ ve vm u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: d~ d~ > e+ mu+ ve vm u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: d~ s~ > e+ e+ ve ve u~ c~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: d~ s~ > e+ e+ ve ve u~ c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process d~ s~ > mu+ mu+ vm vm u~ c~ QCD=0 SMHLOOP=0 @1 with process d~ s~ > e+ e+ ve ve u~ c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process s~ s~ > e+ mu+ ve vm c~ c~ QCD=0 SMHLOOP=0 @1 with process d~ d~ > e+ mu+ ve vm u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u c > e+ mu+ ve vm d s QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u c > e+ mu+ ve vm d s QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u d~ > e+ mu+ ve vm s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u d~ > e+ mu+ ve vm s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u s~ > e+ mu+ ve vm d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u s~ > e+ mu+ ve vm d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: c d~ > e+ mu+ ve vm s u~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: c d~ > e+ mu+ ve vm s u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: c s~ > e+ mu+ ve vm d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: c s~ > e+ mu+ ve vm d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: d~ s~ > e+ mu+ ve vm u~ c~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: d~ s~ > e+ mu+ ve vm u~ c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: d d > e- e- ve~ ve~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d d > e- e- ve~ ve~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Combined process d d > mu- mu- vm~ vm~ u u QCD=0 SMHLOOP=0 @2 with process d d > e- e- ve~ ve~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d u~ > e- e- ve~ ve~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d u~ > e- e- ve~ ve~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process d u~ > mu- mu- vm~ vm~ u d~ QCD=0 SMHLOOP=0 @2 with process d u~ > e- e- ve~ ve~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s s > e- e- ve~ ve~ c c QCD=0 SMHLOOP=0 @2 with process d d > e- e- ve~ ve~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s s > mu- mu- vm~ vm~ c c QCD=0 SMHLOOP=0 @2 with process d d > e- e- ve~ ve~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s c~ > e- e- ve~ ve~ c s~ QCD=0 SMHLOOP=0 @2 with process d u~ > e- e- ve~ ve~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s c~ > mu- mu- vm~ vm~ c s~ QCD=0 SMHLOOP=0 @2 with process d u~ > e- e- ve~ ve~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: u~ u~ > e- e- ve~ ve~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: u~ u~ > e- e- ve~ ve~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process u~ u~ > mu- mu- vm~ vm~ d~ d~ QCD=0 SMHLOOP=0 @2 with process u~ u~ > e- e- ve~ ve~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process c~ c~ > e- e- ve~ ve~ s~ s~ QCD=0 SMHLOOP=0 @2 with process u~ u~ > e- e- ve~ ve~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process c~ c~ > mu- mu- vm~ vm~ s~ s~ QCD=0 SMHLOOP=0 @2 with process u~ u~ > e- e- ve~ ve~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d d > e- mu- ve~ vm~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d d > e- mu- ve~ vm~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d s > e- e- ve~ ve~ u c QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d s > e- e- ve~ ve~ u c QCD=0 SMHLOOP=0 @2 
+INFO: Combined process d s > mu- mu- vm~ vm~ u c QCD=0 SMHLOOP=0 @2 with process d s > e- e- ve~ ve~ u c QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d u~ > e- e- ve~ ve~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d u~ > e- e- ve~ ve~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d u~ > e- mu- ve~ vm~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d u~ > e- mu- ve~ vm~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process d u~ > mu- mu- vm~ vm~ c s~ QCD=0 SMHLOOP=0 @2 with process d u~ > e- e- ve~ ve~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d c~ > e- e- ve~ ve~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d c~ > e- e- ve~ ve~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process d c~ > mu- mu- vm~ vm~ u s~ QCD=0 SMHLOOP=0 @2 with process d c~ > e- e- ve~ ve~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s s > e- mu- ve~ vm~ c c QCD=0 SMHLOOP=0 @2 with process d d > e- mu- ve~ vm~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s u~ > e- e- ve~ ve~ c d~ QCD=0 SMHLOOP=0 @2 with process d c~ > e- e- ve~ ve~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s u~ > mu- mu- vm~ vm~ c d~ QCD=0 SMHLOOP=0 @2 with process d c~ > e- e- ve~ ve~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s c~ > e- e- ve~ ve~ u d~ QCD=0 SMHLOOP=0 @2 with process d u~ > e- e- ve~ ve~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s c~ > e- mu- ve~ vm~ c s~ QCD=0 SMHLOOP=0 @2 with process d u~ > e- mu- ve~ vm~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s c~ > mu- mu- vm~ vm~ u d~ QCD=0 SMHLOOP=0 @2 with process d u~ > e- e- ve~ ve~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: u~ u~ > e- mu- ve~ vm~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: u~ u~ > e- mu- ve~ vm~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: u~ c~ > e- e- ve~ ve~ d~ s~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: u~ c~ > e- e- ve~ ve~ d~ s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process u~ c~ > mu- mu- vm~ vm~ d~ s~ QCD=0 SMHLOOP=0 @2 with process u~ c~ > e- e- ve~ ve~ d~ s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process c~ c~ > e- mu- ve~ vm~ s~ s~ QCD=0 SMHLOOP=0 @2 with process u~ u~ > e- mu- ve~ vm~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d s > e- mu- ve~ vm~ u c QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d s > e- mu- ve~ vm~ u c QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d u~ > e- mu- ve~ vm~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d u~ > e- mu- ve~ vm~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d c~ > e- mu- ve~ vm~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d c~ > e- mu- ve~ vm~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: s u~ > e- mu- ve~ vm~ c d~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: s u~ > e- mu- ve~ vm~ c d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: s c~ > e- mu- ve~ vm~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: s c~ > e- mu- ve~ vm~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: u~ c~ > e- mu- ve~ vm~ d~ s~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: u~ c~ > e- mu- ve~ vm~ d~ s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: u u > e+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u u > e+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1 
+INFO: Combined process u u > mu+ ta+ vm vt d d QCD=0 SMHLOOP=0 @1 with process u u > e+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u d~ > e+ ta+ ve vt d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u d~ > e+ ta+ ve vt d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process u d~ > mu+ ta+ vm vt d u~ QCD=0 SMHLOOP=0 @1 with process u d~ > e+ ta+ ve vt d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c c > e+ ta+ ve vt s s QCD=0 SMHLOOP=0 @1 with process u u > e+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c c > mu+ ta+ vm vt s s QCD=0 SMHLOOP=0 @1 with process u u > e+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c s~ > e+ ta+ ve vt s c~ QCD=0 SMHLOOP=0 @1 with process u d~ > e+ ta+ ve vt d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c s~ > mu+ ta+ vm vt s c~ QCD=0 SMHLOOP=0 @1 with process u d~ > e+ ta+ ve vt d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: d~ d~ > e+ ta+ ve vt u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: d~ d~ > e+ ta+ ve vt u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process d~ d~ > mu+ ta+ vm vt u~ u~ QCD=0 SMHLOOP=0 @1 with process d~ d~ > e+ ta+ ve vt u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process s~ s~ > e+ ta+ ve vt c~ c~ QCD=0 SMHLOOP=0 @1 with process d~ d~ > e+ ta+ ve vt u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process s~ s~ > mu+ ta+ vm vt c~ c~ QCD=0 SMHLOOP=0 @1 with process d~ d~ > e+ ta+ ve vt u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u c > e+ ta+ ve vt d s QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u c > e+ ta+ ve vt d s QCD=0 SMHLOOP=0 @1 
+INFO: Combined process u c > mu+ ta+ vm vt d s QCD=0 SMHLOOP=0 @1 with process u c > e+ ta+ ve vt d s QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u d~ > e+ ta+ ve vt s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u d~ > e+ ta+ ve vt s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process u d~ > mu+ ta+ vm vt s c~ QCD=0 SMHLOOP=0 @1 with process u d~ > e+ ta+ ve vt s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: u s~ > e+ ta+ ve vt d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: u s~ > e+ ta+ ve vt d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process u s~ > mu+ ta+ vm vt d c~ QCD=0 SMHLOOP=0 @1 with process u s~ > e+ ta+ ve vt d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c d~ > e+ ta+ ve vt s u~ QCD=0 SMHLOOP=0 @1 with process u s~ > e+ ta+ ve vt d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c d~ > mu+ ta+ vm vt s u~ QCD=0 SMHLOOP=0 @1 with process u s~ > e+ ta+ ve vt d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c s~ > e+ ta+ ve vt d u~ QCD=0 SMHLOOP=0 @1 with process u d~ > e+ ta+ ve vt s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process c s~ > mu+ ta+ vm vt d u~ QCD=0 SMHLOOP=0 @1 with process u d~ > e+ ta+ ve vt s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: d~ s~ > e+ ta+ ve vt u~ c~ QCD=0 SMHLOOP=0 @1 
+INFO: Processing color information for process: d~ s~ > e+ ta+ ve vt u~ c~ QCD=0 SMHLOOP=0 @1 
+INFO: Combined process d~ s~ > mu+ ta+ vm vt u~ c~ QCD=0 SMHLOOP=0 @1 with process d~ s~ > e+ ta+ ve vt u~ c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Helas calls for process: d d > e- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d d > e- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Combined process d d > mu- ta- vm~ vt~ u u QCD=0 SMHLOOP=0 @2 with process d d > e- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d u~ > e- ta- ve~ vt~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d u~ > e- ta- ve~ vt~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process d u~ > mu- ta- vm~ vt~ u d~ QCD=0 SMHLOOP=0 @2 with process d u~ > e- ta- ve~ vt~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s s > e- ta- ve~ vt~ c c QCD=0 SMHLOOP=0 @2 with process d d > e- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s s > mu- ta- vm~ vt~ c c QCD=0 SMHLOOP=0 @2 with process d d > e- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s c~ > e- ta- ve~ vt~ c s~ QCD=0 SMHLOOP=0 @2 with process d u~ > e- ta- ve~ vt~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s c~ > mu- ta- vm~ vt~ c s~ QCD=0 SMHLOOP=0 @2 with process d u~ > e- ta- ve~ vt~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: u~ u~ > e- ta- ve~ vt~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: u~ u~ > e- ta- ve~ vt~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process u~ u~ > mu- ta- vm~ vt~ d~ d~ QCD=0 SMHLOOP=0 @2 with process u~ u~ > e- ta- ve~ vt~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process c~ c~ > e- ta- ve~ vt~ s~ s~ QCD=0 SMHLOOP=0 @2 with process u~ u~ > e- ta- ve~ vt~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process c~ c~ > mu- ta- vm~ vt~ s~ s~ QCD=0 SMHLOOP=0 @2 with process u~ u~ > e- ta- ve~ vt~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d s > e- ta- ve~ vt~ u c QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d s > e- ta- ve~ vt~ u c QCD=0 SMHLOOP=0 @2 
+INFO: Combined process d s > mu- ta- vm~ vt~ u c QCD=0 SMHLOOP=0 @2 with process d s > e- ta- ve~ vt~ u c QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d u~ > e- ta- ve~ vt~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d u~ > e- ta- ve~ vt~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process d u~ > mu- ta- vm~ vt~ c s~ QCD=0 SMHLOOP=0 @2 with process d u~ > e- ta- ve~ vt~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: d c~ > e- ta- ve~ vt~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: d c~ > e- ta- ve~ vt~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process d c~ > mu- ta- vm~ vt~ u s~ QCD=0 SMHLOOP=0 @2 with process d c~ > e- ta- ve~ vt~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s u~ > e- ta- ve~ vt~ c d~ QCD=0 SMHLOOP=0 @2 with process d c~ > e- ta- ve~ vt~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s u~ > mu- ta- vm~ vt~ c d~ QCD=0 SMHLOOP=0 @2 with process d c~ > e- ta- ve~ vt~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s c~ > e- ta- ve~ vt~ u d~ QCD=0 SMHLOOP=0 @2 with process d u~ > e- ta- ve~ vt~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process s c~ > mu- ta- vm~ vt~ u d~ QCD=0 SMHLOOP=0 @2 with process d u~ > e- ta- ve~ vt~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Helas calls for process: u~ c~ > e- ta- ve~ vt~ d~ s~ QCD=0 SMHLOOP=0 @2 
+INFO: Processing color information for process: u~ c~ > e- ta- ve~ vt~ d~ s~ QCD=0 SMHLOOP=0 @2 
+INFO: Combined process u~ c~ > mu- ta- vm~ vt~ d~ s~ QCD=0 SMHLOOP=0 @2 with process u~ c~ > e- ta- ve~ vt~ d~ s~ QCD=0 SMHLOOP=0 @2 
+INFO: Creating files in directory P1_qq_taptapvlvlqq 
+INFO: Generating Feynman diagrams for Process: u u > ta+ ta+ vt vt d d QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u d~ > ta+ ta+ vt vt d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: d~ d~ > ta+ ta+ vt vt u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u c > ta+ ta+ vt vt d s QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u d~ > ta+ ta+ vt vt s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u s~ > ta+ ta+ vt vt d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: d~ s~ > ta+ ta+ vt vt u~ c~ QCD=0 SMHLOOP=0 @1 
+INFO: Finding symmetric diagrams for subprocess group qq_taptapvlvlqq 
+INFO: Creating files in directory P2_qq_tamtamvlvlqq 
+INFO: Generating Feynman diagrams for Process: d d > ta- ta- vt~ vt~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d u~ > ta- ta- vt~ vt~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: u~ u~ > ta- ta- vt~ vt~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d s > ta- ta- vt~ vt~ u c QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d u~ > ta- ta- vt~ vt~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d c~ > ta- ta- vt~ vt~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: u~ c~ > ta- ta- vt~ vt~ d~ s~ QCD=0 SMHLOOP=0 @2 
+INFO: Finding symmetric diagrams for subprocess group qq_tamtamvlvlqq 
+INFO: Creating files in directory P1_qq_llvlvlqq 
+INFO: Generating Feynman diagrams for Process: u u > e+ e+ ve ve d d QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u d~ > e+ e+ ve ve d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: d~ d~ > e+ e+ ve ve u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u u > e+ mu+ ve vm d d QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u c > e+ e+ ve ve d s QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u d~ > e+ e+ ve ve s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u d~ > e+ mu+ ve vm d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u s~ > e+ e+ ve ve d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: d~ d~ > e+ mu+ ve vm u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: d~ s~ > e+ e+ ve ve u~ c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u c > e+ mu+ ve vm d s QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u d~ > e+ mu+ ve vm s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u s~ > e+ mu+ ve vm d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: c d~ > e+ mu+ ve vm s u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: c s~ > e+ mu+ ve vm d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: d~ s~ > e+ mu+ ve vm u~ c~ QCD=0 SMHLOOP=0 @1 
+INFO: Finding symmetric diagrams for subprocess group qq_llvlvlqq 
+INFO: Creating files in directory P2_qq_llvlvlqq 
+INFO: Generating Feynman diagrams for Process: d d > e- e- ve~ ve~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d u~ > e- e- ve~ ve~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: u~ u~ > e- e- ve~ ve~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d d > e- mu- ve~ vm~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d s > e- e- ve~ ve~ u c QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d u~ > e- e- ve~ ve~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d u~ > e- mu- ve~ vm~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d c~ > e- e- ve~ ve~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: u~ u~ > e- mu- ve~ vm~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: u~ c~ > e- e- ve~ ve~ d~ s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d s > e- mu- ve~ vm~ u c QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d u~ > e- mu- ve~ vm~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d c~ > e- mu- ve~ vm~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: s u~ > e- mu- ve~ vm~ c d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: s c~ > e- mu- ve~ vm~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: u~ c~ > e- mu- ve~ vm~ d~ s~ QCD=0 SMHLOOP=0 @2 
+INFO: Finding symmetric diagrams for subprocess group qq_llvlvlqq 
+INFO: Creating files in directory P1_qq_ltapvlvlqq 
+INFO: Generating Feynman diagrams for Process: u u > e+ ta+ ve vt d d QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u d~ > e+ ta+ ve vt d u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: d~ d~ > e+ ta+ ve vt u~ u~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u c > e+ ta+ ve vt d s QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u d~ > e+ ta+ ve vt s c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: u s~ > e+ ta+ ve vt d c~ QCD=0 SMHLOOP=0 @1 
+INFO: Generating Feynman diagrams for Process: d~ s~ > e+ ta+ ve vt u~ c~ QCD=0 SMHLOOP=0 @1 
+INFO: Finding symmetric diagrams for subprocess group qq_ltapvlvlqq 
+INFO: Creating files in directory P2_qq_ltamvlvlqq 
+INFO: Generating Feynman diagrams for Process: d d > e- ta- ve~ vt~ u u QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d u~ > e- ta- ve~ vt~ u d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: u~ u~ > e- ta- ve~ vt~ d~ d~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d s > e- ta- ve~ vt~ u c QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d u~ > e- ta- ve~ vt~ c s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: d c~ > e- ta- ve~ vt~ u s~ QCD=0 SMHLOOP=0 @2 
+INFO: Generating Feynman diagrams for Process: u~ c~ > e- ta- ve~ vt~ d~ s~ QCD=0 SMHLOOP=0 @2 
+INFO: Finding symmetric diagrams for subprocess group qq_ltamvlvlqq 
+Generated helas calls for 60 subprocesses (11812 diagrams) in 82.577 s
+Wrote files for 17168 helas calls in 187.671 s
+ALOHA: aloha creates VVVV8 routines
+ALOHA: aloha creates FFV2 routines
+ALOHA: aloha creates FFV1 routines
+ALOHA: aloha creates VVV6 routines
+ALOHA: aloha creates FFS1 routines
+ALOHA: aloha creates VVS3 routines
+save configuration file to /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/lvlvjj_sm/Cards/me5_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate web pages 
+Output to directory /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/lvlvjj_sm done.
+Type "launch" to generate events from this process, or see
+/data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/lvlvjj_sm/README
+Run "open index.html" to see more information about this process.
+display multiparticles
+Multiparticle labels:
+all = g u c d s u~ c~ d~ s~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ t b t~ b~ z w+ h w- ta- ta+
+l- = e- mu- ta-
+j = g u c d s u~ c~ d~ s~
+vl = ve vm vt
+l+ = e+ mu+ ta+
+p = g u c d s u~ c~ d~ s~
+vl~ = ve~ vm~ vt~
+quit
+moving generated process to working directory
+INFO: Using default PDF sets for 2017 production
+starting LO mode
+[?1034h************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.6.5                 20xx-xx-xx         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/processtmp/Cards/me5_configuration.txt  
+INFO: load configuration from /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt  
+INFO: load configuration from /data/pku/home/xiaoj/eft/genproductions/bin/MadGraph5_aMCatNLO/lvlvjj_sm/lvlvjj_sm_gridpack/work/processtmp/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+using cluster: condor
+generate_events pilotrun
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [01mNot Avail.[0m        |
+| 2. Choose the detector simulation program    [1mdetector[0m = [01mNot Avail.[0m        |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'madspin=ON' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.[60s to answer] 
+>[1;34mrun_card missed argument time_of_flight. Takes default: -1.0[0m
+[1;34mrun_card missed argument bias_module. Takes default: None[0m
+[1;34mrun_card missed argument event_norm. Takes default: sum[0m
+[1;34mrun_card missed argument pt_min_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument pt_max_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument e_min_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument e_max_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument eta_min_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument eta_max_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument mxx_min_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument mxx_only_part_antipart. Takes default: {'default': False}[0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m2[0m. run   : [32mrun_card.dat[0m                                   |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, enter path][90s to answer] 
+>[1mINFO: modify parameter gridpack of the run_card.dat to True [0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m2[0m. run   : [32mrun_card.dat[0m                                   |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, enter path] 
+>INFO: Update the dependent parameter of the param_card.dat 
+Generating gridpack with run name pilotrun
+survey  pilotrun --accuracy=0.01 --points=2000 --iterations=8 --gridpack=.true.
+INFO: compile directory 
+INFO: Using LHAPDF v6.2.1 interface for PDFs 
+compile Source Directory
+Using random number seed offset = 21
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P1_qq_taptapvlvlqq  
+INFO:     P2_qq_tamtamvlvlqq  
+INFO:     P1_qq_llvlvlqq  
+INFO:     P2_qq_llvlvlqq  
+INFO:     P1_qq_ltapvlvlqq  
+INFO:     P2_qq_ltamvlvlqq  
+INFO:  Idle: 967,  Running: 7,  Completed: 222 [  4.2s  ] 
+INFO:  Idle: 966,  Running: 7,  Completed: 223 [  7.6s  ] 
+INFO:  Idle: 959,  Running: 9,  Completed: 228 [  41.6s  ] 
+INFO:  Idle: 949,  Running: 11,  Completed: 236 [  1m 15s  ] 
+INFO:  Idle: 934,  Running: 19,  Completed: 243 [  1m 48s  ] 
+INFO:  Idle: 915,  Running: 29,  Completed: 252 [  2m 22s  ] 
+INFO: Start to wait 60s between checking status.
+Note that you can change this time in the configuration file.
+Press ctrl-C to force the update. 
+INFO:  Idle: 904,  Running: 26,  Completed: 266 [  3m 26s  ] 
+INFO:  Idle: 894,  Running: 27,  Completed: 275 [  4m 33s  ] 
+INFO:  Idle: 879,  Running: 30,  Completed: 287 [  5m 41s  ] 
+INFO:  Idle: 878,  Running: 23,  Completed: 295 [  6m 47s  ] 
+INFO:  Idle: 878,  Running: 19,  Completed: 299 [  7m 59s  ] 
+INFO:  Idle: 864,  Running: 26,  Completed: 306 [  9m 8s  ] 
+INFO:  Idle: 853,  Running: 33,  Completed: 310 [  10m 16s  ] 
+INFO:  Idle: 843,  Running: 35,  Completed: 318 [  11m 23s  ] 
+INFO:  Idle: 831,  Running: 37,  Completed: 328 [  12m 29s  ] 
+INFO:  Idle: 820,  Running: 36,  Completed: 340 [  13m 36s  ] 
+INFO:  Idle: 812,  Running: 35,  Completed: 349 [  14m 44s  ] 
+INFO:  Idle: 782,  Running: 42,  Completed: 372 [  15m 50s  ] 
+INFO:  Idle: 769,  Running: 36,  Completed: 391 [  16m 55s  ] 
+INFO:  Idle: 761,  Running: 22,  Completed: 413 [  18m 2s  ] 
+INFO:  Idle: 754,  Running: 12,  Completed: 430 [  19m 11s  ] 
+INFO:  Idle: 745,  Running: 17,  Completed: 434 [  20m 16s  ] 
+INFO:  Idle: 734,  Running: 25,  Completed: 437 [  21m 20s  ] 
+INFO:  Idle: 734,  Running: 19,  Completed: 443 [  22m 24s  ] 
+INFO:  Idle: 734,  Running: 13,  Completed: 449 [  23m 29s  ] 
+INFO:  Idle: 734,  Running: 10,  Completed: 452 [  24m 33s  ] 
+INFO:  Idle: 724,  Running: 13,  Completed: 459 [  25m 37s  ] 
+INFO:  Idle: 712,  Running: 23,  Completed: 461 [  26m 41s  ] 
+INFO:  Idle: 697,  Running: 30,  Completed: 469 [  27m 45s  ] 
+INFO:  Idle: 685,  Running: 35,  Completed: 476 [  28m 48s  ] 
+INFO:  Idle: 673,  Running: 36,  Completed: 487 [  29m 51s  ] 
+INFO:  Idle: 643,  Running: 47,  Completed: 506 [  30m 58s  ] 
+INFO:  Idle: 625,  Running: 49,  Completed: 522 [  32m 12s  ] 
+INFO:  Idle: 607,  Running: 42,  Completed: 547 [  33m 20s  ] 
+INFO:  Idle: 590,  Running: 31,  Completed: 575 [  34m 25s  ] 
+INFO:  Idle: 590,  Running: 30,  Completed: 576 [  35m 28s  ] 
+INFO:  Idle: 590,  Running: 23,  Completed: 583 [  36m 35s  ] 
+INFO:  Idle: 590,  Running: 15,  Completed: 591 [  37m 38s  ] 
+INFO:  Idle: 584,  Running: 12,  Completed: 600 [  38m 41s  ] 
+INFO:  Idle: 575,  Running: 20,  Completed: 601 [  39m 43s  ] 
+INFO:  Idle: 566,  Running: 28,  Completed: 602 [  40m 46s  ] 
+INFO:  Idle: 555,  Running: 37,  Completed: 604 [  41m 49s  ] 
+INFO:  Idle: 542,  Running: 39,  Completed: 615 [  42m 53s  ] 
+INFO:  Idle: 526,  Running: 39,  Completed: 631 [  43m 57s  ] 
+INFO:  Idle: 509,  Running: 34,  Completed: 653 [  45m 1s  ] 
+INFO:  Idle: 457,  Running: 47,  Completed: 692 [  46m 6s  ] 
+INFO:  Idle: 406,  Running: 59,  Completed: 731 [  47m 8s  ] 
+INFO:  Idle: 354,  Running: 59,  Completed: 783 [  48m 10s  ] 
+INFO:  Idle: 338,  Running: 54,  Completed: 804 [  49m 14s  ] 
+INFO:  Idle: 317,  Running: 39,  Completed: 840 [  50m 19s  ] 
+INFO:  Idle: 301,  Running: 38,  Completed: 857 [  51m 22s  ] 
+INFO:  Idle: 295,  Running: 33,  Completed: 868 [  52m 24s  ] 
+INFO:  Idle: 295,  Running: 20,  Completed: 881 [  53m 26s  ] 
+INFO:  Idle: 295,  Running: 11,  Completed: 890 [  54m 28s  ] 
+INFO:  Idle: 295,  Running: 5,  Completed: 896 [  55m 30s  ] 
+INFO:  Idle: 287,  Running: 8,  Completed: 901 [  56m 32s  ] 
+INFO:  Idle: 272,  Running: 23,  Completed: 901 [  57m 33s  ] 
+INFO:  Idle: 263,  Running: 31,  Completed: 902 [  58m 35s  ] 
+INFO:  Idle: 251,  Running: 42,  Completed: 903 [  59m 38s  ] 
+INFO:  Idle: 235,  Running: 43,  Completed: 918 [  1h 0m  ] 
+INFO:  Idle: 195,  Running: 37,  Completed: 964 [  1h 1m  ] 
+INFO:  Idle: 170,  Running: 27,  Completed: 999 [  1h 2m  ] 
+INFO:  Idle: 145,  Running: 29,  Completed: 1022 [  1h 3m  ] 
+INFO:  Idle: 102,  Running: 34,  Completed: 1060 [  1h 4m  ] 
+INFO:  Idle: 87,  Running: 32,  Completed: 1077 [  1h 5m  ] 
+INFO:  Idle: 69,  Running: 13,  Completed: 1114 [  1h 7m  ] 
+INFO:  Idle: 57,  Running: 15,  Completed: 1124 [  1h 8m  ] 
+INFO:  Idle: 46,  Running: 16,  Completed: 1134 [  1h 9m  ] 
+INFO:  Idle: 28,  Running: 22,  Completed: 1146 [  1h 10m  ] 
+INFO:  Idle: 6,  Running: 32,  Completed: 1158 [  1h 11m  ] 
+INFO:  Idle: 0,  Running: 31,  Completed: 1165 [  1h 12m  ] 
+INFO:  Idle: 0,  Running: 25,  Completed: 1171 [  1h 12m  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 1183 [  1h 13m  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 1188 [  1h 13m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 1191 [  1h 14m  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 1192 [  1h 14m  ] 
+INFO: All jobs finished 
+INFO:  Idle: 0,  Running: 0,  Completed: 1196 [  1h 15m  ] 
+  === Results Summary for run: pilotrun tag: tag_1 ===
+
+     Cross-section :   0.02819 +- 8.178e-05 pb
+     Nb of events :  0
+ 
+INFO: End survey 
+combine_events
+INFO: Combining Events 
+INFO: fail to reach target 10000 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+decay_events -from_cards
+create_gridpack
+INFO: Creating gridpack 
+P1_qq_taptapvlvlqq
+P2_qq_tamtamvlvlqq
+P1_qq_llvlvlqq
+P2_qq_llvlvlqq
+P1_qq_ltapvlvlqq
+P2_qq_ltamvlvlqq
+Cleaning  SubProcesses...... 
+INFO: gridpack created 
+quit
+INFO: storing files of previous run 
+INFO: Done 
+INFO:  
+finished pilot run
+cleaning temporary output
+unpacking temporary gridpack
+cleaning temporary gridpack
+preparing final gridpack
+cleaning unneeded files from gridpack

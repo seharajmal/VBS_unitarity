@@ -1,0 +1,43 @@
+#************************************************************
+#*                     MadGraph5_aMC@NLO                    *
+#*                                                          *
+#*                *                       *                 *
+#*                  *        * *        *                   *
+#*                    * * * * 5 * * * *                     *
+#*                  *        * *        *                   *
+#*                *                       *                 *
+#*                                                          *
+#*                                                          *
+#*         VERSION 2.6.5                 2018-02-03         *
+#*                                                          *
+#*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+#*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+#*                                                          *
+#************************************************************
+#*                                                          *
+#*               Command File for MadGraph5_aMC@NLO         *
+#*                                                          *
+#*     run as ./bin/mg5_aMC  filename                       *
+#*                                                          *
+#************************************************************
+set default_unset_couplings 99
+set loop_color_flows False
+set gauge unitary
+set max_npoint_for_channel 0
+set group_subprocesses Auto
+set ignore_six_quark_processes False
+set loop_optimized_output True
+set complex_mass_scheme False
+import model SMEFTsim_A_U35_MwScheme_UFO_v3_1-cHW_massless
+define j = g u c d s u~ c~ d~ s~
+define l+ = e+ mu+
+define l- = e- mu-
+define p = g u c d s u~ c~ d~ s~
+define j = p
+define l+ = e+ mu+ ta+
+define l- = e- mu- ta-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+generate p p > l+ l+ vl vl j j QCD=0 SMHLOOP=0 NP=1 NP^2==1 @ 1
+add process p p > l- l- vl~ vl~ j j QCD=0 SMHLOOP=0 NP=1 NP^2==1 @ 2
+output VBS_SSWW_cHW_int_2016 -nojpeg

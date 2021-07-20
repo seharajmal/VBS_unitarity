@@ -1,0 +1,6 @@
+P1_qq_taptapvlvlqq
+P2_qq_tamtamvlvlqq
+P1_qq_llvlvlqq
+P2_qq_llvlvlqq
+P1_qq_ltapvlvlqq
+P2_qq_ltamvlvlqq
