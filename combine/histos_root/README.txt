@@ -1,7 +1,7 @@
 Codici per ricavare i file .root contententi gli istogrammi con cui si creano le datacard per combine
 
 data: 
-Contiene gli output di Madgraph/ExRootAnalysis (è necessaria la libreria LibExRootAnalysis.so per leggere i file in output da ExRootAnalysis). 
+Contiene gli output di Madgraph/ExRootAnalysis (è necessaria la libreria LibExRootAnalysis.so per lavorare coi file in output da ExRootAnalysis). 
 Sono file "model.root" contenenti le distribuzioni di alcune osservabili (Px, Py, Pz, PT, Eta, Phi) senza distinzione fra particelle. Per creare gli 
 istogrammi relativi alla distribuzione di una certa osservabile per una particella specifica uso gli eseguibili "all_obs"
 
