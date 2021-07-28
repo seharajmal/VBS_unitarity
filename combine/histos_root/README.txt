@@ -25,3 +25,5 @@ Es:
 prende da tutti i file in histos/Eta gli istogrammi relativi all'eta degli elettroni, mettendoli in un unico file .root, contenuto in histos4datacards.
 
 Per ricavare la significance uso i codici di Andrea.
+
+(("carini" serve per fare i plot SM vs SM +EFT carini e non quelli brutti del TBrowser. "cariniCV" idem per operatore CPC vs operatore CPV. "significanza" calcola a mano la significatività per tutte le distribuzioni, per tutti i contributi EFT, e tira fuori un file .txt con le tabelle già riempite da compilare in latex)
