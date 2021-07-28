@@ -48,9 +48,25 @@ add_executable(all_mll src/all_mll.cpp)
 target_link_libraries(all_mll PUBLIC ${ROOT_LIBRARIES} /home/nyykki/Scrivania/histos_root/libExRootAnalysis.so)
 install(TARGETS all_mll DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}) 
 
+add_executable(carini src/carini.cpp)
+target_link_libraries(carini PUBLIC ${ROOT_LIBRARIES})
+install(TARGETS carini DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}) 
+
+add_executable(cariniCV src/cariniCV.cpp)
+target_link_libraries(cariniCV PUBLIC ${ROOT_LIBRARIES})
+install(TARGETS cariniCV DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}) 
+
+add_executable(significanza src/significanza.cpp)
+target_link_libraries(significanza PUBLIC ${ROOT_LIBRARIES})
+install(TARGETS significanza DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}) 
+
 add_executable(all_mjj src/all_mjj.cpp)
 target_link_libraries(all_mjj PUBLIC ${ROOT_LIBRARIES} /home/nyykki/Scrivania/histos_root/libExRootAnalysis.so)
 install(TARGETS all_mjj DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}) 
+
+#add_executable(phi src/phi.cpp)
+#target_link_libraries(phi PUBLIC ${ROOT_LIBRARIES} /home/nyykki/Scrivania/histos_root/libExRootAnalysis.so)
+#install(TARGETS phi DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}) 
 
 add_executable(merge_multipart src/merge_multipart.cpp)
 target_link_libraries(merge_multipart PUBLIC ${ROOT_LIBRARIES} /home/nyykki/Scrivania/histos_root/libExRootAnalysis.so)

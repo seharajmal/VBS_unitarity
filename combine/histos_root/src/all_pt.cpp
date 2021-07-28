@@ -23,10 +23,10 @@ int main(int argc, char*argv[]){
   vector<double> E;
   vector<double> PT;
 
-  TH1F *PT_el=new TH1F("h_PT_el","",20,0,800);
-  TH1F *PT_ta=new TH1F("h_PT_ta","",20,0,800);
-  TH1F *PT_mu=new TH1F("h_PT_mu","",20,0,800);
-  TH1F *PT_j=new TH1F("h_PT_j","",20,0,800);
+  TH1F *PT_el=new TH1F("h_PT_el","",5,0,1200);
+  TH1F *PT_ta=new TH1F("h_PT_ta","",5,0,1200);
+  TH1F *PT_mu=new TH1F("h_PT_mu","",5,0,1200);
+  TH1F *PT_j=new TH1F("h_PT_j","",5,0,1200);
 
 /*
   TH1F *PT_j1=new TH1F("h_PT_j1","",50,0,800);
@@ -47,7 +47,8 @@ int main(int argc, char*argv[]){
       if(abs(Particle->PID)==11) PT_el->Fill(Particle->PT);
       else if(abs(Particle->PID)==15) PT_ta->Fill(Particle->PT);
       else if(abs(Particle->PID)==13) PT_mu->Fill(Particle->PT);
-      else if(0<abs(Particle->PID)<9)
+      else if(abs(Particle->PID)==1||abs(Particle->PID)==2||abs(Particle->PID)==3||abs(Particle->PID)==4||abs(Particle->PID)==5||abs(Particle->PID)==6||abs(Particle->PID)==7||
+      abs(Particle->PID)==8||abs(Particle->PID)==21)
 /*    	    {
       	    E.push_back(Particle->E);
       	    PT.push_back(Particle->PT);
@@ -90,6 +91,16 @@ int main(int argc, char*argv[]){
     {
     xsec=0.008858; 
     }
+    
+  else if(strcmp(argv[1],"cW_int")==0)
+    { 
+    xsec=0.0006169; 
+    }
+  else if(strcmp(argv[1],"cW_quad")==0)
+    {
+    xsec=0.008858; 
+    }
+
   else if(strcmp(argv[1],"cHW_int")==0)
     { 
     xsec=-0.00004092; 
@@ -122,7 +133,30 @@ int main(int argc, char*argv[]){
     { 
     xsec=0.00000635; 
     }  
-   
+  else if(strcmp(argv[1],"cWtil_int")==0)
+    { 
+    xsec=0.00002017; 
+    }
+  else if(strcmp(argv[1],"cWtil_quad")==0)
+    { 
+    xsec=0.008843; 
+    }
+  else if(strcmp(argv[1],"cHWtil_int")==0)
+    { 
+    xsec=0.0000007662; 
+    }
+  else if(strcmp(argv[1],"cHWtil_quad")==0)
+    { 
+    xsec=0.00007571; 
+    }   
+  else if(strcmp(argv[1],"cHWBtil_int")==0)
+    { 
+    xsec=0.0000001041; 
+    }
+  else if(strcmp(argv[1],"cHWBtil_quad")==0)
+    { 
+    xsec=0.000002429; 
+    }  
 
   double w=xsec*lum/n;
 

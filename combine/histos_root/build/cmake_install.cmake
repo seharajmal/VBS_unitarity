@@ -150,6 +150,90 @@ file(INSTALL DESTINATION "/home/nyykki/Scrivania/histos_root" TYPE EXECUTABLE FI
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/carini" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/carini")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/carini"
+         RPATH "")
+  endif()
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/nyykki/Scrivania/histos_root/carini")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "/home/nyykki/Scrivania/histos_root" TYPE EXECUTABLE FILES "/home/nyykki/Scrivania/histos_root/build/carini")
+  if(EXISTS "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/carini" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/carini")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/carini"
+         OLD_RPATH "/home/nyykki/root/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/carini")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/cariniCV" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/cariniCV")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/cariniCV"
+         RPATH "")
+  endif()
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/nyykki/Scrivania/histos_root/cariniCV")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "/home/nyykki/Scrivania/histos_root" TYPE EXECUTABLE FILES "/home/nyykki/Scrivania/histos_root/build/cariniCV")
+  if(EXISTS "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/cariniCV" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/cariniCV")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/cariniCV"
+         OLD_RPATH "/home/nyykki/root/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/cariniCV")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/significanza" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/significanza")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/significanza"
+         RPATH "")
+  endif()
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/nyykki/Scrivania/histos_root/significanza")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "/home/nyykki/Scrivania/histos_root" TYPE EXECUTABLE FILES "/home/nyykki/Scrivania/histos_root/build/significanza")
+  if(EXISTS "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/significanza" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/significanza")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/significanza"
+         OLD_RPATH "/home/nyykki/root/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/significanza")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/all_mjj" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/home/nyykki/Scrivania/histos_root/all_mjj")
     file(RPATH_CHECK

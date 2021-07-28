@@ -1,5 +1,4 @@
 Codici per ricavare i file .root contententi gli istogrammi con cui si creano le datacard per combine
-(create_histos.sh)
 
 data: 
 Contiene gli output di Madgraph/ExRootAnalysis (è necessaria la libreria LibExRootAnalysis.so per leggere i file in output da ExRootAnalysis). 

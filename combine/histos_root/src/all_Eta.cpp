@@ -20,10 +20,10 @@ int main(int argc, char*argv[]){
   ExRootTreeReader *treeReader = new ExRootTreeReader(t);
   const TClonesArray *branchParticle = treeReader->UseBranch("Particle");
 
-  TH1F *Eta_el=new TH1F("h_Eta_el","",20,-10,10);
-  TH1F *Eta_ta=new TH1F("h_Eta_ta","",20,-10,10);
-  TH1F *Eta_mu=new TH1F("h_Eta_mu","",20,-10,10);
-  TH1F *Eta_j=new TH1F("h_Eta_j","",20,-10,10);
+  TH1F *Eta_el=new TH1F("h_Eta_el","",10,-6,6);
+  TH1F *Eta_ta=new TH1F("h_Eta_ta","",10,-6,6);
+  TH1F *Eta_mu=new TH1F("h_Eta_mu","",10,-6,6);
+  TH1F *Eta_j=new TH1F("h_Eta_j","",10,-6,8);
 
 /*    
   TH1F *Eta_j1=new TH1F("h_Eta_j1","",50,-10,10);
@@ -42,9 +42,9 @@ int main(int argc, char*argv[]){
     for(int j=0; j<branchParticle->GetEntries(); j++){
       TRootLHEFParticle *Particle = (TRootLHEFParticle*) branchParticle->At(j);
 
-      if(abs(Particle->PID)==11) Eta_el->Fill(Particle->Eta);
-      else if(abs(Particle->PID)==15) Eta_ta->Fill(Particle->Eta);
-      else if(abs(Particle->PID)==13) Eta_mu->Fill(Particle->Eta);
+      if(abs(Particle->PID)==11){ Eta_el->Fill(Particle->Eta); }
+      else if(abs(Particle->PID)==15){ Eta_ta->Fill(Particle->Eta); }
+      else if(abs(Particle->PID)==13){ Eta_mu->Fill(Particle->Eta); }
 /*    else if(0<abs(Particle->PID)<6)
       	    {
       	    PT.push_back(Particle->PT);
@@ -64,7 +64,8 @@ int main(int argc, char*argv[]){
            }
        PT.clear();  
 */
-      else if(0<abs(Particle->PID)<6) Eta_j->Fill(Particle->Eta);
+      else if(abs(Particle->PID)==1||abs(Particle->PID)==2||abs(Particle->PID)==3||abs(Particle->PID)==4||abs(Particle->PID)==5||abs(Particle->PID)==6||abs(Particle->PID)==7||
+      abs(Particle->PID)==8||abs(Particle->PID)==21) { Eta_j->Fill(Particle->Eta); }
     }  
   }
 
@@ -88,6 +89,16 @@ int main(int argc, char*argv[]){
     {
     xsec=0.008858; 
     }
+    
+  else if(strcmp(argv[1],"cW_int_0.4")==0)
+    { 
+    xsec=0.000252; 
+    }
+  else if(strcmp(argv[1],"cW_quad_0.4")==0)
+    {
+    xsec=0.001394; 
+    }
+
   else if(strcmp(argv[1],"cHW_int")==0)
     { 
     xsec=-0.00004092; 
@@ -119,7 +130,32 @@ int main(int argc, char*argv[]){
   else if(strcmp(argv[1],"cHDD_quad")==0)
     { 
     xsec=0.00000635; 
-    }  
+    }
+  else if(strcmp(argv[1],"cWtil_int")==0)
+    { 
+    xsec=0.00002017; 
+    }
+  else if(strcmp(argv[1],"cWtil_quad")==0)
+    { 
+    xsec=0.008843; 
+    }      
+
+  else if(strcmp(argv[1],"cHWtil_int")==0)
+    { 
+    xsec=0.0000007662; 
+    }
+  else if(strcmp(argv[1],"cHWtil_quad")==0)
+    { 
+    xsec=0.00007571; 
+    }
+  else if(strcmp(argv[1],"cHWBtil_int")==0)
+    { 
+    xsec=0.0000001041; 
+    }
+  else if(strcmp(argv[1],"cHWBtil_quad")==0)
+    { 
+    xsec=0.000002429; 
+    } 
 
   double w=xsec*lum/n;
 
@@ -166,7 +202,7 @@ int main(int argc, char*argv[]){
   char outfile[50];
   sprintf(outfile, "histos/Eta/%s.root",argv[1]);
   TFile* risultati=new TFile(outfile, "RECREATE");
-
+  
   Eta_el->Write();
   Eta_mu->Write();
   Eta_ta->Write();

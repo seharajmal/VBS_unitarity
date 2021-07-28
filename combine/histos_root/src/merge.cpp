@@ -214,8 +214,8 @@ int main(int argc, char*argv[]){
   h->Write("VBS_SSWW_SM_cW_int_quad");
   file->Clear();
   h->Clear();
- 
-  sprintf(path, "/home/nyykki/Scrivania/histos_root/histos/%s/SM_cHbox_quad.root",argv[1]);
+  
+    sprintf(path, "/home/nyykki/Scrivania/histos_root/histos/%s/SM_cHbox_quad.root",argv[1]);
   file=TFile::Open(path);
   h=(TH1F*)file->Get(particle);
   risultato->cd();
@@ -269,6 +269,114 @@ int main(int argc, char*argv[]){
   file->Clear();
   h->Clear(); 
   
+  sprintf(path, "/home/nyykki/Scrivania/histos_root/histos/%s/SM_cW_quad_0.4.root",argv[1]);
+  file=TFile::Open(path);
+  h=(TH1F*)file->Get(particle);
+  risultato->cd();
+  risultato->cd(dirname);
+  h->Write("VBS_SSWW_SM_cW_quad_04");
+  file->Clear();
+  h->Clear();
+  
+  sprintf(path, "/home/nyykki/Scrivania/histos_root/histos/%s/SM_cW_int_0.4.root",argv[1]);
+  file=TFile::Open(path);
+  h=(TH1F*)file->Get(particle);
+  risultato->cd();
+  risultato->cd(dirname);
+  h->Write("VBS_SSWW_SM_cW_int_04");
+  file->Clear();
+  h->Clear();
+  
+  sprintf(path, "/home/nyykki/Scrivania/histos_root/histos/%s/SM_cW_int_quad_0.4.root",argv[1]);
+  file=TFile::Open(path);
+  h=(TH1F*)file->Get(particle);
+  risultato->cd();
+  risultato->cd(dirname);
+  h->Write("VBS_SSWW_SM_cW_int_quad_04");
+  file->Clear();
+  h->Clear();  
+  
+  sprintf(path, "/home/nyykki/Scrivania/histos_root/histos/%s/SM_cWtil_quad.root",argv[1]);
+  file=TFile::Open(path);
+  h=(TH1F*)file->Get(particle);
+  risultato->cd();
+  risultato->cd(dirname);
+  h->Write("VBS_SSWW_SM_cWtil_quad");
+  file->Clear();
+  h->Clear();
+  
+  sprintf(path, "/home/nyykki/Scrivania/histos_root/histos/%s/SM_cWtil_int.root",argv[1]);
+  file=TFile::Open(path);
+  h=(TH1F*)file->Get(particle);
+  risultato->cd();
+  risultato->cd(dirname);
+  h->Write("VBS_SSWW_SM_cWtil_int");
+  file->Clear();
+  h->Clear();
+  
+  sprintf(path, "/home/nyykki/Scrivania/histos_root/histos/%s/SM_cWtil_int_quad.root",argv[1]);
+  file=TFile::Open(path);
+  h=(TH1F*)file->Get(particle);
+  risultato->cd();
+  risultato->cd(dirname);
+  h->Write("VBS_SSWW_SM_cWtil_int_quad");
+  file->Clear();
+  h->Clear(); 
+
+  sprintf(path, "/home/nyykki/Scrivania/histos_root/histos/%s/SM_cHWtil_quad.root",argv[1]);
+  file=TFile::Open(path);
+  h=(TH1F*)file->Get(particle);
+  risultato->cd();
+  risultato->cd(dirname);
+  h->Write("VBS_SSWW_SM_cHWtil_quad");
+  file->Clear();
+  h->Clear();
+  
+  sprintf(path, "/home/nyykki/Scrivania/histos_root/histos/%s/SM_cHWtil_int.root",argv[1]);
+  file=TFile::Open(path);
+  h=(TH1F*)file->Get(particle);
+  risultato->cd();
+  risultato->cd(dirname);
+  h->Write("VBS_SSWW_SM_cHWtil_int");
+  file->Clear();
+  h->Clear();
+  
+  sprintf(path, "/home/nyykki/Scrivania/histos_root/histos/%s/SM_cHWtil_int_quad.root",argv[1]);
+  file=TFile::Open(path);
+  h=(TH1F*)file->Get(particle);
+  risultato->cd();
+  risultato->cd(dirname);
+  h->Write("VBS_SSWW_SM_cHWtil_int_quad");
+  file->Clear();
+  h->Clear(); 
+
+  sprintf(path, "/home/nyykki/Scrivania/histos_root/histos/%s/SM_cHWBtil_quad.root",argv[1]);
+  file=TFile::Open(path);
+  h=(TH1F*)file->Get(particle);
+  risultato->cd();
+  risultato->cd(dirname);
+  h->Write("VBS_SSWW_SM_cHWBtil_quad");
+  file->Clear();
+  h->Clear();
+  
+  sprintf(path, "/home/nyykki/Scrivania/histos_root/histos/%s/SM_cHWBtil_int.root",argv[1]);
+  file=TFile::Open(path);
+  h=(TH1F*)file->Get(particle);
+  risultato->cd();
+  risultato->cd(dirname);
+  h->Write("VBS_SSWW_SM_cHWBtil_int");
+  file->Clear();
+  h->Clear();
+  
+  sprintf(path, "/home/nyykki/Scrivania/histos_root/histos/%s/SM_cHWBtil_int_quad.root",argv[1]);
+  file=TFile::Open(path);
+  h=(TH1F*)file->Get(particle);
+  risultato->cd();
+  risultato->cd(dirname);
+  h->Write("VBS_SSWW_SM_cHWBtil_int_quad");
+  file->Clear();
+  h->Clear(); 
+
   
   risultato->Close();
 

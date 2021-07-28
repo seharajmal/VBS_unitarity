@@ -2,6 +2,7 @@
 #include <TGraph.h>
 #include <TH1F.h>
 #include <TTree.h>
+#include <TLorentzVector.h>
 #include <TFile.h>
 #include <TSystem.h>
 #include <TClonesArray.h>
@@ -14,12 +15,14 @@ using namespace std;
 
 int main(int argc, char*argv[]){
 
-  double mll=0;
+// double mll=0;
   vector<double> E;
   vector<double> Px;
   vector<double> Py;
   vector<double> Pz;
-  TH1F *Mll=new TH1F("h_mll","",20,0,1000);
+  
+  TH1F *Mll=new TH1F("h_mll","",10,0,3800);
+
 
   char infile[50];
   sprintf(infile, "data/%s.root",argv[1]);
@@ -45,10 +48,14 @@ int main(int argc, char*argv[]){
         Py.push_back(Particle->Py);
         Pz.push_back(Particle->Pz);    
         }
-    
+
      }
-        mll=sqrt(pow(E[0]+E[1],2)-pow(Px[0]+Px[1],2)-pow(Py[0]+Py[1],2)-pow(Pz[0]+Pz[1],2));  
-        Mll->Fill(mll);
+      
+        TLorentzVector l1(Px[0],Py[0],Pz[0],E[0]);
+        TLorentzVector l2(Px[1],Py[1],Pz[1],E[1]);
+        
+//      mll=sqrt(pow(E[0]+E[1],2)-pow(Px[0]+Px[1],2)-pow(Py[0]+Py[1],2)-pow(Pz[0]+Pz[1],2));  
+        Mll->Fill((l1+l2).M());
         E.clear();
         Px.clear();
         Py.clear();
@@ -76,6 +83,16 @@ int main(int argc, char*argv[]){
     {
     xsec=0.008858; 
     }
+    
+  else if(strcmp(argv[1],"cW_int")==0)
+    { 
+    xsec=0.0006169; 
+    }
+  else if(strcmp(argv[1],"cW_quad")==0)
+    {
+    xsec=0.008858; 
+    }    
+    
   else if(strcmp(argv[1],"cHW_int")==0)
     { 
     xsec=-0.00004092; 
@@ -108,7 +125,30 @@ int main(int argc, char*argv[]){
     { 
     xsec=0.00000635; 
     }  
-    
+  else if(strcmp(argv[1],"cWtil_int")==0)
+    { 
+    xsec=0.00002017; 
+    }
+  else if(strcmp(argv[1],"cWtil_quad")==0)
+    { 
+    xsec=0.008843; 
+    }    
+  else if(strcmp(argv[1],"cHWtil_int")==0)
+    { 
+    xsec=0.0000007662; 
+    }
+  else if(strcmp(argv[1],"cHWtil_quad")==0)
+    { 
+    xsec=0.00007571; 
+    }
+  else if(strcmp(argv[1],"cHWBtil_int")==0)
+    { 
+    xsec=0.0000001041; 
+    }
+  else if(strcmp(argv[1],"cHWBtil_quad")==0)
+    { 
+    xsec=0.000002429; 
+    } 
 
   double w=xsec*lum/n;
 

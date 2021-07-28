@@ -56,6 +56,18 @@ CMAKE_BINARY_DIR = /home/nyykki/Scrivania/histos_root/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -68,27 +80,16 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
+.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -101,28 +102,27 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
 
-.PHONY : edit_cache/fast
+.PHONY : list_install_components/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,43 +157,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named merge_multipart
+# Target rules for targets named merge
 
 # Build rule for target.
-merge_multipart: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 merge_multipart
-.PHONY : merge_multipart
+merge: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 merge
+.PHONY : merge
 
 # fast build rule for target.
-merge_multipart/fast:
-	$(MAKE) -f CMakeFiles/merge_multipart.dir/build.make CMakeFiles/merge_multipart.dir/build
-.PHONY : merge_multipart/fast
+merge/fast:
+	$(MAKE) -f CMakeFiles/merge.dir/build.make CMakeFiles/merge.dir/build
+.PHONY : merge/fast
 
 #=============================================================================
-# Target rules for targets named all_mjj
+# Target rules for targets named cariniCV
 
 # Build rule for target.
-all_mjj: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 all_mjj
-.PHONY : all_mjj
+cariniCV: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cariniCV
+.PHONY : cariniCV
 
 # fast build rule for target.
-all_mjj/fast:
-	$(MAKE) -f CMakeFiles/all_mjj.dir/build.make CMakeFiles/all_mjj.dir/build
-.PHONY : all_mjj/fast
-
-#=============================================================================
-# Target rules for targets named all_mll
-
-# Build rule for target.
-all_mll: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 all_mll
-.PHONY : all_mll
-
-# fast build rule for target.
-all_mll/fast:
-	$(MAKE) -f CMakeFiles/all_mll.dir/build.make CMakeFiles/all_mll.dir/build
-.PHONY : all_mll/fast
+cariniCV/fast:
+	$(MAKE) -f CMakeFiles/cariniCV.dir/build.make CMakeFiles/cariniCV.dir/build
+.PHONY : cariniCV/fast
 
 #=============================================================================
 # Target rules for targets named all_Eta
@@ -209,17 +196,56 @@ all_Eta/fast:
 .PHONY : all_Eta/fast
 
 #=============================================================================
-# Target rules for targets named merge
+# Target rules for targets named all_mll
 
 # Build rule for target.
-merge: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 merge
-.PHONY : merge
+all_mll: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 all_mll
+.PHONY : all_mll
 
 # fast build rule for target.
-merge/fast:
-	$(MAKE) -f CMakeFiles/merge.dir/build.make CMakeFiles/merge.dir/build
-.PHONY : merge/fast
+all_mll/fast:
+	$(MAKE) -f CMakeFiles/all_mll.dir/build.make CMakeFiles/all_mll.dir/build
+.PHONY : all_mll/fast
+
+#=============================================================================
+# Target rules for targets named carini
+
+# Build rule for target.
+carini: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 carini
+.PHONY : carini
+
+# fast build rule for target.
+carini/fast:
+	$(MAKE) -f CMakeFiles/carini.dir/build.make CMakeFiles/carini.dir/build
+.PHONY : carini/fast
+
+#=============================================================================
+# Target rules for targets named significanza
+
+# Build rule for target.
+significanza: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 significanza
+.PHONY : significanza
+
+# fast build rule for target.
+significanza/fast:
+	$(MAKE) -f CMakeFiles/significanza.dir/build.make CMakeFiles/significanza.dir/build
+.PHONY : significanza/fast
+
+#=============================================================================
+# Target rules for targets named all_mjj
+
+# Build rule for target.
+all_mjj: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 all_mjj
+.PHONY : all_mjj
+
+# fast build rule for target.
+all_mjj/fast:
+	$(MAKE) -f CMakeFiles/all_mjj.dir/build.make CMakeFiles/all_mjj.dir/build
+.PHONY : all_mjj/fast
 
 #=============================================================================
 # Target rules for targets named all_pt
@@ -233,6 +259,19 @@ all_pt: cmake_check_build_system
 all_pt/fast:
 	$(MAKE) -f CMakeFiles/all_pt.dir/build.make CMakeFiles/all_pt.dir/build
 .PHONY : all_pt/fast
+
+#=============================================================================
+# Target rules for targets named merge_multipart
+
+# Build rule for target.
+merge_multipart: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 merge_multipart
+.PHONY : merge_multipart
+
+# fast build rule for target.
+merge_multipart/fast:
+	$(MAKE) -f CMakeFiles/merge_multipart.dir/build.make CMakeFiles/merge_multipart.dir/build
+.PHONY : merge_multipart/fast
 
 src/all_Eta.o: src/all_Eta.cpp.o
 
@@ -342,6 +381,60 @@ src/all_pt.cpp.s:
 	$(MAKE) -f CMakeFiles/all_pt.dir/build.make CMakeFiles/all_pt.dir/src/all_pt.cpp.s
 .PHONY : src/all_pt.cpp.s
 
+src/carini.o: src/carini.cpp.o
+
+.PHONY : src/carini.o
+
+# target to build an object file
+src/carini.cpp.o:
+	$(MAKE) -f CMakeFiles/carini.dir/build.make CMakeFiles/carini.dir/src/carini.cpp.o
+.PHONY : src/carini.cpp.o
+
+src/carini.i: src/carini.cpp.i
+
+.PHONY : src/carini.i
+
+# target to preprocess a source file
+src/carini.cpp.i:
+	$(MAKE) -f CMakeFiles/carini.dir/build.make CMakeFiles/carini.dir/src/carini.cpp.i
+.PHONY : src/carini.cpp.i
+
+src/carini.s: src/carini.cpp.s
+
+.PHONY : src/carini.s
+
+# target to generate assembly for a file
+src/carini.cpp.s:
+	$(MAKE) -f CMakeFiles/carini.dir/build.make CMakeFiles/carini.dir/src/carini.cpp.s
+.PHONY : src/carini.cpp.s
+
+src/cariniCV.o: src/cariniCV.cpp.o
+
+.PHONY : src/cariniCV.o
+
+# target to build an object file
+src/cariniCV.cpp.o:
+	$(MAKE) -f CMakeFiles/cariniCV.dir/build.make CMakeFiles/cariniCV.dir/src/cariniCV.cpp.o
+.PHONY : src/cariniCV.cpp.o
+
+src/cariniCV.i: src/cariniCV.cpp.i
+
+.PHONY : src/cariniCV.i
+
+# target to preprocess a source file
+src/cariniCV.cpp.i:
+	$(MAKE) -f CMakeFiles/cariniCV.dir/build.make CMakeFiles/cariniCV.dir/src/cariniCV.cpp.i
+.PHONY : src/cariniCV.cpp.i
+
+src/cariniCV.s: src/cariniCV.cpp.s
+
+.PHONY : src/cariniCV.s
+
+# target to generate assembly for a file
+src/cariniCV.cpp.s:
+	$(MAKE) -f CMakeFiles/cariniCV.dir/build.make CMakeFiles/cariniCV.dir/src/cariniCV.cpp.s
+.PHONY : src/cariniCV.cpp.s
+
 src/merge.o: src/merge.cpp.o
 
 .PHONY : src/merge.o
@@ -396,24 +489,54 @@ src/merge_multipart.cpp.s:
 	$(MAKE) -f CMakeFiles/merge_multipart.dir/build.make CMakeFiles/merge_multipart.dir/src/merge_multipart.cpp.s
 .PHONY : src/merge_multipart.cpp.s
 
+src/significanza.o: src/significanza.cpp.o
+
+.PHONY : src/significanza.o
+
+# target to build an object file
+src/significanza.cpp.o:
+	$(MAKE) -f CMakeFiles/significanza.dir/build.make CMakeFiles/significanza.dir/src/significanza.cpp.o
+.PHONY : src/significanza.cpp.o
+
+src/significanza.i: src/significanza.cpp.i
+
+.PHONY : src/significanza.i
+
+# target to preprocess a source file
+src/significanza.cpp.i:
+	$(MAKE) -f CMakeFiles/significanza.dir/build.make CMakeFiles/significanza.dir/src/significanza.cpp.i
+.PHONY : src/significanza.cpp.i
+
+src/significanza.s: src/significanza.cpp.s
+
+.PHONY : src/significanza.s
+
+# target to generate assembly for a file
+src/significanza.cpp.s:
+	$(MAKE) -f CMakeFiles/significanza.dir/build.make CMakeFiles/significanza.dir/src/significanza.cpp.s
+.PHONY : src/significanza.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
-	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... merge_multipart"
-	@echo "... all_mjj"
-	@echo "... all_mll"
 	@echo "... install/strip"
-	@echo "... all_Eta"
+	@echo "... install/local"
 	@echo "... merge"
+	@echo "... cariniCV"
+	@echo "... all_Eta"
+	@echo "... all_mll"
+	@echo "... carini"
+	@echo "... significanza"
+	@echo "... all_mjj"
 	@echo "... all_pt"
+	@echo "... merge_multipart"
+	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... list_install_components"
+	@echo "... install"
 	@echo "... src/all_Eta.o"
 	@echo "... src/all_Eta.i"
 	@echo "... src/all_Eta.s"
@@ -426,12 +549,21 @@ help:
 	@echo "... src/all_pt.o"
 	@echo "... src/all_pt.i"
 	@echo "... src/all_pt.s"
+	@echo "... src/carini.o"
+	@echo "... src/carini.i"
+	@echo "... src/carini.s"
+	@echo "... src/cariniCV.o"
+	@echo "... src/cariniCV.i"
+	@echo "... src/cariniCV.s"
 	@echo "... src/merge.o"
 	@echo "... src/merge.i"
 	@echo "... src/merge.s"
 	@echo "... src/merge_multipart.o"
 	@echo "... src/merge_multipart.i"
 	@echo "... src/merge_multipart.s"
+	@echo "... src/significanza.o"
+	@echo "... src/significanza.i"
+	@echo "... src/significanza.s"
 .PHONY : help
 
 

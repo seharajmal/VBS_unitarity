@@ -6,6 +6,7 @@
 #include <TSystem.h>
 #include <TClonesArray.h>
 #include "TROOT.h"
+#include <TLorentzVector.h>
 #include "ExRootTreeReader.h"
 #include "ExRootClasses.h"
 #include <cmath>
@@ -14,12 +15,7 @@ using namespace std;
 
 int main(int argc, char*argv[]){
 
-  double mjj=0;
-  vector<double> E;
-  vector<double> Px;
-  vector<double> Py;
-  vector<double> Pz;
-  TH1F *Mjj=new TH1F("h_mjj","",20,0,10000);
+  TH1F *Mjj=new TH1F("h_mjj","",10,0,11000);
 
   char infile[50];
   sprintf(infile, "data/%s.root",argv[1]);
@@ -34,25 +30,25 @@ int main(int argc, char*argv[]){
   for(int i=0; i<treeReader->GetEntries(); i++){
     treeReader->ReadEntry(i);
     if(branchParticle->GetEntries()==0) continue;
-
+    TLorentzVector v;
     for(int j=0; j<branchParticle->GetEntries(); j++){
       TRootLHEFParticle *Particle = (TRootLHEFParticle*) branchParticle->At(j);
-    
-      if(0<abs(Particle->PID)<9)
+      
+      if(abs(Particle->PID)==1||abs(Particle->PID)==2||abs(Particle->PID)==3||abs(Particle->PID)==4||abs(Particle->PID)==5||abs(Particle->PID)==6||abs(Particle->PID)==7||
+      	 abs(Particle->PID)==8||abs(Particle->PID)==21)
         {
-        E.push_back(Particle->E);
-        Px.push_back(Particle->Px);
-        Py.push_back(Particle->Py);
-        Pz.push_back(Particle->Pz);    
+        double px = Particle->Px;
+        double py = Particle->Py;
+        double pz = Particle->Pz;
+        double e = Particle->E;
+        v.SetPxPyPzE(px + v.Px(),py + v.Py(),pz + v.Pz(),e + v.E());
         }
+        
     
-     }
-        mjj=sqrt(pow(E[0]+E[1],2)-pow(Px[0]+Px[1],2)-pow(Py[0]+Py[1],2)-pow(Pz[0]+Pz[1],2));  
-        Mjj->Fill(mjj);
-        E.clear();
-        Px.clear();
-        Py.clear();
-        Pz.clear();
+     }        
+     
+        Mjj->Fill(v.M());
+        v.Clear(); 
   
   }
   
@@ -76,6 +72,16 @@ int main(int argc, char*argv[]){
     {
     xsec=0.008858; 
     }
+    
+  else if(strcmp(argv[1],"cW_int")==0)
+    { 
+    xsec=0.0006169; 
+    }
+  else if(strcmp(argv[1],"cW_quad")==0)
+    {
+    xsec=0.008858; 
+    }
+    
   else if(strcmp(argv[1],"cHW_int")==0)
     { 
     xsec=-0.00004092; 
@@ -108,7 +114,30 @@ int main(int argc, char*argv[]){
     { 
     xsec=0.00000635; 
     }  
-     
+  else if(strcmp(argv[1],"cWtil_int")==0)
+    { 
+    xsec=0.00002017; 
+    }
+  else if(strcmp(argv[1],"cWtil_quad")==0)
+    { 
+    xsec=0.008843; 
+    }     
+  else if(strcmp(argv[1],"cHWtil_int")==0)
+    { 
+    xsec=0.0000007662; 
+    }
+  else if(strcmp(argv[1],"cHWtil_quad")==0)
+    { 
+    xsec=0.00007571; 
+    }
+  else if(strcmp(argv[1],"cHWBtil_int")==0)
+    { 
+    xsec=0.0000001041; 
+    }
+  else if(strcmp(argv[1],"cHWBtil_quad")==0)
+    { 
+    xsec=0.000002429; 
+    } 
 
   double w=xsec*lum/n;
 
