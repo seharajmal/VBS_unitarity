@@ -1,0 +1,120 @@
+PT_mu int
+     
+1 ha 3025 eventi;  2 ha 399 eventi;  3 ha 76 eventi;  4 ha 12 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 2 eventi;       
+     
+     
+PT_mu quad
+     
+1 ha 3222 eventi;  2 ha 495 eventi;  3 ha 141 eventi;  4 ha 63 eventi;  5 ha 41 eventi;  6 ha 30 eventi;  7 ha 20 eventi;  8 ha 14 eventi;  9 ha 12 eventi;  10 ha 87 eventi;       
+     
+     
+PT_mu int_quad
+     
+1 ha 3249 eventi;  2 ha 506 eventi;  3 ha 145 eventi;  4 ha 65 eventi;  5 ha 42 eventi;  6 ha 30 eventi;  7 ha 20 eventi;  8 ha 14 eventi;  9 ha 12 eventi;  10 ha 89 eventi;       
+     
+     
+PT_mu int
+     
+1 ha 2996 eventi;  2 ha 388 eventi;  3 ha 72 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 0 eventi;       
+     
+     
+PT_mu quad
+     
+1 ha 3023 eventi;  2 ha 405 eventi;  3 ha 81 eventi;  4 ha 14 eventi;  5 ha 2 eventi;  6 ha 1 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 20 eventi;       
+     
+     
+PT_mu int_quad
+     
+1 ha 3021 eventi;  2 ha 405 eventi;  3 ha 81 eventi;  4 ha 14 eventi;  5 ha 2 eventi;  6 ha 1 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 20 eventi;       
+     
+     
+PT_mu int
+     
+1 ha 2987 eventi;  2 ha 387 eventi;  3 ha 72 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 0 eventi;       
+     
+     
+PT_mu quad
+     
+1 ha 2998 eventi;  2 ha 388 eventi;  3 ha 72 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 0 eventi;       
+     
+     
+PT_mu int_quad
+     
+1 ha 2988 eventi;  2 ha 387 eventi;  3 ha 72 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 0 eventi;       
+     
+     
+PT_mu int
+     
+1 ha 2995 eventi;  2 ha 388 eventi;  3 ha 72 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 0 eventi;       
+     
+     
+PT_mu quad
+     
+1 ha 2999 eventi;  2 ha 389 eventi;  3 ha 73 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 5 eventi;       
+     
+     
+PT_mu int_quad
+     
+1 ha 2996 eventi;  2 ha 388 eventi;  3 ha 72 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 5 eventi;       
+     
+     
+PT_mu int
+     
+1 ha 2987 eventi;  2 ha 386 eventi;  3 ha 72 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 0 eventi;       
+     
+     
+PT_mu quad
+     
+1 ha 2998 eventi;  2 ha 388 eventi;  3 ha 72 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 0 eventi;       
+     
+     
+PT_mu int_quad
+     
+1 ha 2987 eventi;  2 ha 386 eventi;  3 ha 72 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 0 eventi;       
+     
+     
+PT_mu int
+     
+1 ha 2999 eventi;  2 ha 388 eventi;  3 ha 72 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 0 eventi;       
+     
+     
+PT_mu quad
+     
+1 ha 3227 eventi;  2 ha 495 eventi;  3 ha 142 eventi;  4 ha 58 eventi;  5 ha 38 eventi;  6 ha 26 eventi;  7 ha 18 eventi;  8 ha 14 eventi;  9 ha 11 eventi;  10 ha 91 eventi;       
+     
+     
+PT_mu int_quad
+     
+1 ha 3228 eventi;  2 ha 496 eventi;  3 ha 142 eventi;  4 ha 58 eventi;  5 ha 38 eventi;  6 ha 26 eventi;  7 ha 18 eventi;  8 ha 14 eventi;  9 ha 11 eventi;  10 ha 91 eventi;       
+     
+     
+PT_mu int
+     
+1 ha 2998 eventi;  2 ha 388 eventi;  3 ha 72 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 0 eventi;       
+     
+     
+PT_mu quad
+     
+1 ha 3000 eventi;  2 ha 390 eventi;  3 ha 73 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 2 eventi;       
+     
+     
+PT_mu int_quad
+     
+1 ha 3000 eventi;  2 ha 390 eventi;  3 ha 73 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 2 eventi;       
+     
+     
+PT_mu int
+     
+1 ha 2998 eventi;  2 ha 388 eventi;  3 ha 72 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 0 eventi;       
+     
+     
+PT_mu quad
+     
+1 ha 2998 eventi;  2 ha 388 eventi;  3 ha 72 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 0 eventi;       
+     
+     
+PT_mu int_quad
+     
+1 ha 2998 eventi;  2 ha 388 eventi;  3 ha 72 eventi;  4 ha 10 eventi;  5 ha 0 eventi;  6 ha 0 eventi;  7 ha 0 eventi;  8 ha 0 eventi;  9 ha 0 eventi;  10 ha 0 eventi;       
+     
+     

@@ -1,0 +1,16 @@
+imax 1 number of channels 
+jmax * number of backgrounds 
+kmax * number of nuisance parameters
+-----------------------------------------------------------------------------------
+shapes   *      *   /afs/cern.ch/user/c/ccarriva/CMSSW_10_2_13/src/Stat/Limits/test/PT_ta.root    $CHANNEL/$PROCESS    $CHANNEL/$PROCESS_$SYSTEMATIC
+shapes   data_obs      *   /afs/cern.ch/user/c/ccarriva/CMSSW_10_2_13/src/Stat/Limits/test/PT_ta.root    $CHANNEL/$PROCESS
+-----------------------------------------------------------------------------------
+bin               SR_inclusive_2017
+observation       1790
+-----------------------------------------------------------------------------------
+bin                                     SR_inclusive_2017                          SR_inclusive_2017                          SR_inclusive_2017                          
+process                                 sm                                         sm_lin_quad_cHbox                          quad_cHbox                                                                            
+process                                 0                                          1                                          2                                                                                     
+rate                                    1790.259188                                3297.609443                                1495.946030                                                                           
+-----------------------------------------------------------------------------------
+lumi_2017           lnN                 1.023               1.023               1.023               

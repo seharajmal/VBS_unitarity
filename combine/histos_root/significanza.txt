@@ -1,0 +1,105 @@
+\begin{tabular}{ |p{2.2cm}|p{2.5cm}||p{2.2cm}|p{2.2cm}| }
+  \hline
+  \multicolumn{4}{|c|}{Significance for $m_{jj}$ and $m_{ll}$ distributions ($\sigma$)}\\
+  \hline
+
+  Wilson coefficient&EFT contributions&$m_{jj}$&$m_{ll}$\\
+  \hline
+  &SM+lin&1.29682&1.493\\
+  $c_W$&SM+quad&22.7891&68.0889\\
+  &SM+lin+quad&24.0859&69.5819\\
+  \hline
+
+  &SM+lin&-0.018884&0.0798853\\
+  $c_{HW}$&SM+quad&5.86823&52.0838\\
+  &SM+lin+quad&5.84935&52.1637\\
+  \hline
+
+  &SM+lin&-0.307618&-0.288193\\
+  $c_{HWB}$&SM+quad&0.0103177&0.0294762\\
+  &SM+lin+quad&-0.2973&-0.258717\\
+  \hline
+
+  &SM+lin&-0.0471793&0.129638\\
+  $c_{H\square}$&SM+quad&4.26313&34.4912\\
+  &SM+lin+quad&4.21595&34.6208\\
+  \hline
+
+  &SM+lin&-0.236808&-0.194456\\
+  $c_{HDD}$&SM+quad&0.147212&0.629085\\
+  &SM+lin+quad&-0.0895961&0.43463\\
+  \hline
+
+\end{tabular}
+
+
+\begin{tabular}{ |p{2.2cm}|p{2.5cm}||p{2.2cm}|p{2.2cm}|p{2.2cm}|p{2.2cm}|  }
+  \hline
+  \multicolumn{6}{|c|}{Significance for $p_T$ distributions ($\sigma$)}\\
+  \hline
+
+  Wilson coefficient&EFT contributions&$p_T^{e}$&$p_T^{\mu}$&$p_T^{\tau}$&$p_T^j$\\
+  \hline
+  &SM+lin&1.53001&1.59075&1.19148&1.70656\\
+  $c_W$&SM+quad&71.6586&76.3704&72.2544&31.8775\\
+  &SM+lin+quad&73.1886&77.9611&73.4458&33.5841\\
+  \hline
+
+  &SM+lin&0.198622&0.0705608&0.194375&-0.111003\\
+  $c_{HW}$&SM+quad&51.588&52.3528&50.5805&3.60672\\
+  &SM+lin+quad&51.7866&52.4234&50.7748&3.49572\\
+  \hline
+
+  &SM+lin&-0.172743&-0.241158&-0.193927&-0.463725\\
+  $c_{HWB}$&SM+quad&0.00909385&0.0805963&0.0313179&0.0144885\\
+  &SM+lin+quad&-0.163649&-0.160562&-0.16261&-0.449237\\
+  \hline
+
+  &SM+lin&0.236038&0.39856&0.26953&-0.149741\\
+  $c_{H\square}$&SM+quad&34.9389&35.1211&35.3556&0.157007\\
+  &SM+lin+quad&35.1749&35.5197&35.6251&0.00726631\\
+  \hline
+
+  &SM+lin&-0.198975&-0.245026&-0.140382&-0.480961\\
+  $c_{HDD}$&SM+quad&0.47931&0.686952&0.694613&0.0172256\\
+  &SM+lin+quad&0.280335&0.441925&0.55423&-0.463735\\
+  \hline
+
+\end{tabular}
+
+
+\begin{tabular}{ |p{2.2cm}|p{2.5cm}||p{2.2cm}|p{2.2cm}|p{2.2cm}|p{2.2cm}|  }
+  \hline
+  \multicolumn{6}{|c|}{Significance for $\eta$ distributions ($\sigma$)}\\
+  \hline
+
+  Wilson coefficient&EFT contributions&$\eta^{e}$&$\eta^{\mu}$&$\eta^{\tau}$&$\eta^j$\\
+  \hline
+  &SM+lin&1.08033&1.07773&0.820482&1.77377\\
+  $c_W$&SM+quad&14.039&14.9418&14.3211&26.7972\\
+  &SM+lin+quad&15.1193&16.0195&15.1416&28.5709\\
+  \hline
+
+  &SM+lin&-0.066459&-0.0536984&-0.0723557&0.0570441\\
+  $c_{HW}$&SM+quad&2.2762&2.33495&1.95159&18.6721\\
+  &SM+lin+quad&2.20974&2.28126&1.87923&18.7291\\
+  \hline
+
+  &SM+lin&-0.271575&-0.187144&-0.29375&-0.245618\\
+  $c_{HWB}$&SM+quad&0.00898908&0.00838006&0.0310246&0.109912\\
+  &SM+lin+quad&-0.262586&-0.178764&-0.262725&-0.135706\\
+  \hline
+
+  &SM+lin&-0.0744839&-0.0949279&-0.0671449&0.184142\\
+  $c_{H\square}$&SM+quad&0.802018&0.950419&0.901414&28.4143\\
+  &SM+lin+quad&0.727534&0.855491&0.834269&28.5984\\
+  \hline
+
+  &SM+lin&-0.247506&-0.295862&-0.241546&-0.186164\\
+  $c_{HDD}$&SM+quad&0.0332944&0.0574588&0.0337354&0.962022\\
+  &SM+lin+quad&-0.214211&-0.238403&-0.207811&0.775858\\
+  \hline
+
+\end{tabular}
+
+

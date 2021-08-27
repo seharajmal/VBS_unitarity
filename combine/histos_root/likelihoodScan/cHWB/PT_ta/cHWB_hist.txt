@@ -1,0 +1,17 @@
+Combination of SR_inclusive2017=cHWB_SR_inclusive_2017_hist.txt
+imax 1 number of bins
+jmax 2 number of processes minus 1
+kmax 1 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes *                 SR_inclusive2017  /afs/cern.ch/user/c/ccarriva/CMSSW_10_2_13/src/Stat/Limits/test/PT_ta.root SR_inclusive_2017/$PROCESS SR_inclusive_2017/$PROCESS_$SYSTEMATIC
+shapes data_obs          SR_inclusive2017  /afs/cern.ch/user/c/ccarriva/CMSSW_10_2_13/src/Stat/Limits/test/PT_ta.root SR_inclusive_2017/$PROCESS
+----------------------------------------------------------------------------------------------------------------------------------
+bin          SR_inclusive2017
+observation  1790            
+----------------------------------------------------------------------------------------------------------------------------------
+bin                             SR_inclusive2017  SR_inclusive2017  SR_inclusive2017
+process                         sm                sm_lin_quad_cHWB  quad_cHWB       
+process                         0                 1                 2               
+rate                            1790.259188       1783.37894        1.325104        
+----------------------------------------------------------------------------------------------------------------------------------
+lumi_2017               lnN     1.023             1.023             1.023           
