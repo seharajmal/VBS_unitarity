@@ -1,0 +1,17 @@
+/home/nyykki/Scrivania/histos_root/all_pt
+/home/nyykki/Scrivania/histos_root/histos4datacards/merge
+/home/nyykki/Scrivania/histos_root/all_Eta
+/home/nyykki/Scrivania/histos_root/all_deltaEtajj
+/home/nyykki/Scrivania/histos_root/all_deltaPhijj
+/home/nyykki/Scrivania/histos_root/all_mll
+/home/nyykki/Scrivania/histos_root/ciplots
+/home/nyykki/Scrivania/histos_root/comparing_ci
+/home/nyykki/Scrivania/histos_root/distributions
+/home/nyykki/Scrivania/histos_root/distributions_SMvsEFT
+/home/nyykki/Scrivania/histos_root/bin_count
+/home/nyykki/Scrivania/histos_root/significanza
+/home/nyykki/Scrivania/histos_root/significanza2
+/home/nyykki/Scrivania/histos_root/LS_all_obs
+/home/nyykki/Scrivania/histos_root/LSplot
+/home/nyykki/Scrivania/histos_root/all_mjj
+/home/nyykki/Scrivania/histos_root/histos4datacards/merge_multipart
