@@ -1,0 +1,143 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5058,        135]
+NotebookOptionsPosition[      4493,        119]
+NotebookOutlinePosition[      4826,        134]
+CellTagsIndexPosition[      4783,        131]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "FeynArts", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ClearAll", "[", "FormCalc", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "FeynArts`"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "FormCalc`tools`VecSet`"}]}], "Input",
+ CellChangeTimes->{{3.8275766897732487`*^9, 3.827576693570959*^9}, {
+   3.827576849484186*^9, 3.827576859436946*^9}, {3.827576956128971*^9, 
+   3.827576980963108*^9}, {3.827578119772615*^9, 3.82757812004805*^9}, {
+   3.8454951714095993`*^9, 3.845495178078835*^9}, {3.846582255507442*^9, 
+   3.846582264535593*^9}, {3.846582348951791*^9, 3.846582362529571*^9}, {
+   3.8477558528317347`*^9, 3.847755863992799*^9}, {3.84775750032487*^9, 
+   3.8477575182065153`*^9}, {3.847757996847086*^9, 3.8477580002654333`*^9}, 
+   3.848055067822049*^9},ExpressionUUID->"2e470a1a-683c-4718-b785-\
+9de68aa4a1b5"],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{
+  Inherited, 3},ExpressionUUID->"f20d5a74-204d-416b-92d6-7387245b30a3"],
+
+Cell[BoxData[{
+ RowBox[{"name", "=", "\"\<VBSSM\>\""}], "\n", 
+ RowBox[{"process", "=", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}], "\[Rule]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}]}]}], "\n", 
+ RowBox[{
+  RowBox[{"top", "=", 
+   RowBox[{"CreateTopologies", "[", 
+    RowBox[{"0", ",", 
+     RowBox[{"2", "\[Rule]", "2"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"VBStop", "=", 
+   RowBox[{"InsertFields", "[", 
+    RowBox[{"top", ",", "process"}], "]"}]}], ";"}], "\n", 
+ RowBox[{"Paint", "[", "VBStop", "]"}]}], "Input",
+ CellChangeTimes->{{3.847758588090012*^9, 3.8477586091732473`*^9}, 
+   3.8480558630471067`*^9, {3.84805643132707*^9, 3.84805643237579*^9}, {
+   3.848058298878413*^9, 
+   3.8480583031858397`*^9}},ExpressionUUID->"6b4d8a5e-9c0a-4ea9-acac-\
+b6ff89ccc611"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"amp", "=", 
+   RowBox[{"CalcFeynAmp", "[", 
+    RowBox[{"CreateFeynAmp", "[", "VBStop", "]"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"res", "=", 
+   RowBox[{"Unabbr", "[", "amp", "]"}]}], ";"}], "\n", 
+ RowBox[{"VecSet", "[", 
+  RowBox[{"1", ",", "MW", ",", "p", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}], "\n", 
+ RowBox[{"VecSet", "[", 
+  RowBox[{"2", ",", "MW", ",", "p", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", 
+     RowBox[{"-", "1"}]}], "}"}]}], "]"}], "\n", 
+ RowBox[{"VecSet", "[", 
+  RowBox[{"3", ",", "MW", ",", "p", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "Sin\[Theta]", ",", "Cos\[Theta]"}], "}"}]}], 
+  "]"}], "\n", 
+ RowBox[{"VecSet", "[", 
+  RowBox[{"4", ",", "MW", ",", "p", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     RowBox[{"-", "Sin\[Theta]"}], ",", 
+     RowBox[{"-", "Cos\[Theta]"}]}], "}"}]}], "]"}], "\n", 
+ RowBox[{"TotalAmplitude", "=", 
+  RowBox[{"FullSimplify", "[", 
+   RowBox[{"ToComponents", "[", 
+    RowBox[{"res", ",", "\"\<+0+-\>\""}], "]"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.847758588090012*^9, 3.8477586091732473`*^9}, {
+   3.848055379354124*^9, 3.8480553836153917`*^9}, 3.848055431464326*^9, {
+   3.848055892472005*^9, 3.8480558941967783`*^9}, {3.848056438648458*^9, 
+   3.848056439499481*^9}, {3.848056613481929*^9, 3.848056616593939*^9}, {
+   3.848057300936451*^9, 3.848057304367571*^9}, {3.848057369926311*^9, 
+   3.848057370192225*^9}, {3.848057703625494*^9, 3.848057705569463*^9}, {
+   3.8480577595043983`*^9, 3.8480577602634287`*^9}, {3.848058265917733*^9, 
+   3.8480582954785337`*^9}, {3.848058448465764*^9, 3.848058474329146*^9}, {
+   3.848058553950162*^9, 
+   3.84805855428069*^9}},ExpressionUUID->"21788eea-53d2-42a1-942d-\
+854203a1b0a4"]
+},
+WindowSize->{808, 911},
+WindowMargins->{{Automatic, 91}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 855, 13, 101, "Input",ExpressionUUID->"2e470a1a-683c-4718-b785-9de68aa4a1b5"],
+Cell[1416, 35, 331, 10, 6, "Text",ExpressionUUID->"f20d5a74-204d-416b-92d6-7387245b30a3"],
+Cell[1750, 47, 939, 26, 124, "Input",ExpressionUUID->"6b4d8a5e-9c0a-4ea9-acac-b6ff89ccc611"],
+Cell[2692, 75, 1797, 42, 170, "Input",ExpressionUUID->"21788eea-53d2-42a1-942d-854203a1b0a4"]
+}
+]
+*)
+
