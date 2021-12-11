@@ -9,6 +9,8 @@ Please keep this Log Book up to date, so can remember what's happening!
 FeynArts Models:
 Modelli EFT compatibili con FeynArts e FormCalc. 
 
+Amplitudes Calculation Mathematica:
+Codici Mathematica per il calcolo delle ampiezze VBS ssWW con i contributi EFT.
 
 
 gridpack SSWW:
