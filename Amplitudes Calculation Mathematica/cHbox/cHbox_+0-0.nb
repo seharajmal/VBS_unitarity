@@ -1,0 +1,548 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     20141,        540]
+NotebookOptionsPosition[     18130,        508]
+NotebookOutlinePosition[     18494,        524]
+CellTagsIndexPosition[     18451,        521]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "FeynArts", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ClearAll", "[", "FormCalc", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "FeynArts`"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "FormCalc`tools`VecSet`"}]}], "Input",
+ CellChangeTimes->{{3.8275766897732487`*^9, 3.827576693570959*^9}, {
+   3.827576849484186*^9, 3.827576859436946*^9}, {3.827576956128971*^9, 
+   3.827576980963108*^9}, {3.827578119772615*^9, 3.82757812004805*^9}, {
+   3.8454951714095993`*^9, 3.845495178078835*^9}, {3.846582255507442*^9, 
+   3.846582264535593*^9}, {3.846582348951791*^9, 3.846582362529571*^9}, {
+   3.8477558528317347`*^9, 3.847755863992799*^9}, {3.84775750032487*^9, 
+   3.8477575182065153`*^9}, {3.847757996847086*^9, 3.8477580002654333`*^9}, 
+   3.848055067822049*^9},ExpressionUUID->"901cf792-2c58-4f41-b7df-\
+f1ed9a795831"],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{
+  Inherited, 3},ExpressionUUID->"6013cf94-514b-4482-b07f-eb0353251707"],
+
+Cell[BoxData[{
+ RowBox[{"name", "=", "\"\<VBSSM\>\""}], "\n", 
+ RowBox[{"process", "=", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}], "\[Rule]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}]}]}], "\n", 
+ RowBox[{
+  RowBox[{"top", "=", 
+   RowBox[{"CreateTopologies", "[", 
+    RowBox[{"0", ",", 
+     RowBox[{"2", "\[Rule]", "2"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"VBStop", "=", 
+   RowBox[{"InsertFields", "[", 
+    RowBox[{"top", ",", "process", ",", 
+     RowBox[{"GenericModel", "\[Rule]", "\"\<cHbox\>\""}], ",", 
+     RowBox[{"Model", "\[Rule]", "\"\<cHbox\>\""}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{"Paint", "[", "VBStop", "]"}], "\n", 
+ RowBox[{"gt", "=", 
+  RowBox[{"DiagramExtract", "[", 
+   RowBox[{"VBStop", ",", "6"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.847758588090012*^9, 3.8477586091732473`*^9}, 
+   3.8480558630471067`*^9, {3.84805643132707*^9, 3.84805643237579*^9}, {
+   3.848064211912525*^9, 
+   3.848064214646089*^9}},ExpressionUUID->"ab257168-fb5e-4451-9a83-\
+e9fd331a8562"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ampgammat", "=", 
+   RowBox[{"CalcFeynAmp", "[", 
+    RowBox[{"CreateFeynAmp", "[", "gt", "]"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"res1", "=", 
+   RowBox[{"Unabbr", "[", "ampgammat", "]"}]}], ";"}], "\n", 
+ RowBox[{"VecSet", "[", 
+  RowBox[{"1", ",", "MW", ",", "p", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}], "\n", 
+ RowBox[{"VecSet", "[", 
+  RowBox[{"2", ",", "MW", ",", "p", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", 
+     RowBox[{"-", "1"}]}], "}"}]}], "]"}], "\n", 
+ RowBox[{"VecSet", "[", 
+  RowBox[{"3", ",", "MW", ",", "p", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "Sin\[Theta]", ",", "Cos\[Theta]"}], "}"}]}], 
+  "]"}], "\n", 
+ RowBox[{"VecSet", "[", 
+  RowBox[{"4", ",", "MW", ",", "p", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     RowBox[{"-", "Sin\[Theta]"}], ",", 
+     RowBox[{"-", "Cos\[Theta]"}]}], "}"}]}], "]"}], "\n", 
+ RowBox[{
+  RowBox[{"gammat", "=", 
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{"ToComponents", "[", 
+     RowBox[{"res1", ",", "\"\<+0-0\>\""}], "]"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.847758588090012*^9, 3.8477586091732473`*^9}, {
+   3.848055379354124*^9, 3.8480553836153917`*^9}, 3.848055431464326*^9, {
+   3.848055892472005*^9, 3.8480558941967783`*^9}, {3.848056438648458*^9, 
+   3.848056439499481*^9}, {3.848056613481929*^9, 3.848056616593939*^9}, {
+   3.848057300936451*^9, 3.848057304367571*^9}, {3.848057369926311*^9, 
+   3.848057370192225*^9}, {3.848057591632341*^9, 
+   3.848057592294353*^9}},ExpressionUUID->"636ff957-a0f3-4caf-b6cd-\
+717dd18cc4d1"],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{
+  Inherited, 3},ExpressionUUID->"ee37718e-f450-475d-9606-f1a112582cd2"],
+
+Cell[BoxData[{
+ RowBox[{"name", "=", "\"\<VBSSM\>\""}], "\n", 
+ RowBox[{"process", "=", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}], "\[Rule]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}]}]}], "\n", 
+ RowBox[{
+  RowBox[{"top", "=", 
+   RowBox[{"CreateTopologies", "[", 
+    RowBox[{"0", ",", 
+     RowBox[{"2", "\[Rule]", "2"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"VBStop", "=", 
+   RowBox[{"InsertFields", "[", 
+    RowBox[{"top", ",", "process", ",", 
+     RowBox[{"GenericModel", "\[Rule]", "\"\<cHbox\>\""}], ",", 
+     RowBox[{"Model", "\[Rule]", "\"\<cHbox\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"ht", "=", 
+  RowBox[{"DiagramExtract", "[", 
+   RowBox[{"VBStop", ",", "4"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.8480551687424793`*^9, 3.848055187814707*^9}, {
+  3.84805527187217*^9, 3.848055272548464*^9}, {3.848055923970717*^9, 
+  3.848055932443722*^9}, {3.8480570194276333`*^9, 3.848057019584227*^9}, {
+  3.848064216575488*^9, 
+  3.848064218471252*^9}},ExpressionUUID->"93714fd2-7034-4788-838f-\
+b9f3e533c579"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ampht", "=", 
+   RowBox[{"CalcFeynAmp", "[", 
+    RowBox[{"CreateFeynAmp", "[", "ht", "]"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"res2", "=", 
+   RowBox[{"Unabbr", "[", "ampht", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"higgst", "=", 
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{"ToComponents", "[", 
+     RowBox[{"res2", ",", "\"\<+0-0\>\""}], "]"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.848055196855991*^9, 3.8480552331008453`*^9}, {
+  3.848055389879032*^9, 3.848055394397973*^9}, {3.8480554263111887`*^9, 
+  3.848055427224231*^9}, {3.848055896992507*^9, 3.848055898834543*^9}, {
+  3.8480559379600687`*^9, 3.848055966037321*^9}, {3.848056061070477*^9, 
+  3.848056061928467*^9}, {3.848056618971657*^9, 3.8480566217487497`*^9}, {
+  3.848057306230904*^9, 3.848057308260139*^9}, {3.848057372542403*^9, 
+  3.8480573727704153`*^9}, {3.848057594088026*^9, 
+  3.8480575946383266`*^9}},ExpressionUUID->"3e9ba376-9f70-433a-954c-\
+02c1da4da0da"],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{
+  Inherited, 3},ExpressionUUID->"a5b1650a-f5e1-4c1c-9eed-0ba96940810b"],
+
+Cell[BoxData[{
+ RowBox[{"name", "=", "\"\<VBSSM\>\""}], "\n", 
+ RowBox[{"process", "=", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}], "\[Rule]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}]}]}], "\n", 
+ RowBox[{
+  RowBox[{"top", "=", 
+   RowBox[{"CreateTopologies", "[", 
+    RowBox[{"0", ",", 
+     RowBox[{"2", "\[Rule]", "2"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"VBStop", "=", 
+   RowBox[{"InsertFields", "[", 
+    RowBox[{"top", ",", "process", ",", 
+     RowBox[{"GenericModel", "\[Rule]", "\"\<cHbox\>\""}], ",", 
+     RowBox[{"Model", "\[Rule]", "\"\<cHbox\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"cnt", "=", 
+  RowBox[{"DiagramExtract", "[", 
+   RowBox[{"VBStop", ",", "2"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ampcnt", "=", 
+   RowBox[{"CalcFeynAmp", "[", 
+    RowBox[{"CreateFeynAmp", "[", "cnt", "]"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"res3", "=", 
+   RowBox[{"Unabbr", "[", "ampcnt", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"contact", "=", 
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{"ToComponents", "[", 
+     RowBox[{"res3", ",", "\"\<+0-0\>\""}], "]"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.848055406584772*^9, 3.8480554214820967`*^9}, {
+  3.848055880571725*^9, 3.848055902901415*^9}, {3.8480559774205*^9, 
+  3.848056012916263*^9}, {3.848056078144775*^9, 3.848056078698515*^9}, {
+  3.848056623992861*^9, 3.8480566265545893`*^9}, {3.848057022961589*^9, 
+  3.848057023152897*^9}, {3.848057312477704*^9, 3.8480573140819807`*^9}, {
+  3.848057375382869*^9, 3.848057375674162*^9}, {3.848057601396223*^9, 
+  3.848057602114203*^9}, {3.848064220610034*^9, 
+  3.8480642225613127`*^9}},ExpressionUUID->"23f8283b-e76d-4876-bd5b-\
+093822cc3ecf"],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{
+  Inherited, 3},ExpressionUUID->"452f464a-f41a-4a1b-8de6-49205f5f49ba"],
+
+Cell[BoxData[{
+ RowBox[{"name", "=", "\"\<VBSSM\>\""}], "\n", 
+ RowBox[{"process", "=", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}], "\[Rule]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}]}]}], "\n", 
+ RowBox[{
+  RowBox[{"top", "=", 
+   RowBox[{"CreateTopologies", "[", 
+    RowBox[{"0", ",", 
+     RowBox[{"2", "\[Rule]", "2"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"VBStop", "=", 
+   RowBox[{"InsertFields", "[", 
+    RowBox[{"top", ",", "process", ",", 
+     RowBox[{"GenericModel", "\[Rule]", "\"\<cHbox\>\""}], ",", 
+     RowBox[{"Model", "\[Rule]", "\"\<cHbox\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Zt", "=", 
+  RowBox[{"DiagramExtract", "[", 
+   RowBox[{"VBStop", ",", "7"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ampZt", "=", 
+   RowBox[{"CalcFeynAmp", "[", 
+    RowBox[{"CreateFeynAmp", "[", "Zt", "]"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"res4", "=", 
+   RowBox[{"Unabbr", "[", "ampZt", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"zetat", "=", 
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{"ToComponents", "[", 
+     RowBox[{"res4", ",", "\"\<+0-0\>\""}], "]"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.848056261810088*^9, 3.848056288627903*^9}, {
+  3.848057026984521*^9, 3.84805702721169*^9}, {3.848057318141169*^9, 
+  3.8480573204564*^9}, {3.848057378287938*^9, 3.848057378528507*^9}, {
+  3.848057603940948*^9, 3.848057604731636*^9}, {3.8480642244917307`*^9, 
+  3.848064226211788*^9}},ExpressionUUID->"46445418-2cec-46c7-802f-\
+1c8408c0c71a"],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{
+  Inherited, 3},ExpressionUUID->"6c2bd203-f4d6-4edb-93ec-9b9e48df915c"],
+
+Cell[BoxData[{
+ RowBox[{"name", "=", "\"\<VBSSM\>\""}], "\n", 
+ RowBox[{"process", "=", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}], "\[Rule]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}]}]}], "\n", 
+ RowBox[{
+  RowBox[{"top", "=", 
+   RowBox[{"CreateTopologies", "[", 
+    RowBox[{"0", ",", 
+     RowBox[{"2", "\[Rule]", "2"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"VBStop", "=", 
+   RowBox[{"InsertFields", "[", 
+    RowBox[{"top", ",", "process", ",", 
+     RowBox[{"GenericModel", "\[Rule]", "\"\<cHbox\>\""}], ",", 
+     RowBox[{"Model", "\[Rule]", "\"\<cHbox\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"hu", "=", 
+  RowBox[{"DiagramExtract", "[", 
+   RowBox[{"VBStop", ",", "9"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"amphu", "=", 
+   RowBox[{"CalcFeynAmp", "[", 
+    RowBox[{"CreateFeynAmp", "[", "hu", "]"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"res5", "=", 
+   RowBox[{"Unabbr", "[", "amphu", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"higgsu", "=", 
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{"ToComponents", "[", 
+     RowBox[{"res5", ",", "\"\<+0-0\>\""}], "]"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.848056360992195*^9, 3.84805640883258*^9}, {
+  3.848057029976947*^9, 3.8480570301820803`*^9}, {3.848057324229191*^9, 
+  3.848057325961907*^9}, {3.8480573812414083`*^9, 3.8480573816756277`*^9}, {
+  3.8480576073787823`*^9, 3.8480576080739193`*^9}, {3.84806422867455*^9, 
+  3.848064230360299*^9}},ExpressionUUID->"e9ee266a-7cc9-44b0-bc0a-\
+e66a4f86381e"],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{
+  Inherited, 3},ExpressionUUID->"d59644e8-d73d-4bc5-9b84-aea3e8421af7"],
+
+Cell[BoxData[{
+ RowBox[{"name", "=", "\"\<VBSSM\>\""}], "\n", 
+ RowBox[{"process", "=", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}], "\[Rule]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}]}]}], "\n", 
+ RowBox[{
+  RowBox[{"top", "=", 
+   RowBox[{"CreateTopologies", "[", 
+    RowBox[{"0", ",", 
+     RowBox[{"2", "\[Rule]", "2"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"VBStop", "=", 
+   RowBox[{"InsertFields", "[", 
+    RowBox[{"top", ",", "process", ",", 
+     RowBox[{"GenericModel", "\[Rule]", "\"\<cHbox\>\""}], ",", 
+     RowBox[{"Model", "\[Rule]", "\"\<cHbox\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"gu", "=", 
+  RowBox[{"DiagramExtract", "[", 
+   RowBox[{"VBStop", ",", "11"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ampgammau", "=", 
+   RowBox[{"CalcFeynAmp", "[", 
+    RowBox[{"CreateFeynAmp", "[", "gu", "]"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"res6", "=", 
+   RowBox[{"Unabbr", "[", "ampgammau", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"gammau", "=", 
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{"ToComponents", "[", 
+     RowBox[{"res6", ",", "\"\<+0-0\>\""}], "]"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.848056363996986*^9, 3.848056364390984*^9}, {
+  3.848056534521999*^9, 3.848056570253188*^9}, {3.848057033367975*^9, 
+  3.848057033534357*^9}, {3.848057330414116*^9, 3.8480573353013763`*^9}, {
+  3.848057384894041*^9, 3.84805738521288*^9}, {3.848057609862817*^9, 
+  3.8480576108946247`*^9}, {3.848064234119432*^9, 
+  3.848064235866007*^9}},ExpressionUUID->"0643b030-b90f-43e8-902e-\
+f095e8ede73b"],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{
+  Inherited, 3},ExpressionUUID->"2b54d640-31a3-4946-bf39-68c84e773a06"],
+
+Cell[BoxData[{
+ RowBox[{"name", "=", "\"\<VBSSM\>\""}], "\n", 
+ RowBox[{"process", "=", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}], "\[Rule]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"V", "[", "3", "]"}], ",", 
+     RowBox[{"V", "[", "3", "]"}]}], "}"}]}]}], "\n", 
+ RowBox[{
+  RowBox[{"top", "=", 
+   RowBox[{"CreateTopologies", "[", 
+    RowBox[{"0", ",", 
+     RowBox[{"2", "\[Rule]", "2"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"VBStop", "=", 
+   RowBox[{"InsertFields", "[", 
+    RowBox[{"top", ",", "process", ",", 
+     RowBox[{"GenericModel", "\[Rule]", "\"\<cHbox\>\""}], ",", 
+     RowBox[{"Model", "\[Rule]", "\"\<cHbox\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Zu", "=", 
+  RowBox[{"DiagramExtract", "[", 
+   RowBox[{"VBStop", ",", "12"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ampZu", "=", 
+   RowBox[{"CalcFeynAmp", "[", 
+    RowBox[{"CreateFeynAmp", "[", "Zu", "]"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"res7", "=", 
+   RowBox[{"Unabbr", "[", "ampZu", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"zetau", "=", 
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{"ToComponents", "[", 
+     RowBox[{"res7", ",", "\"\<+0-0\>\""}], "]"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{
+  3.848056368280189*^9, {3.848056580822076*^9, 3.8480566081627197`*^9}, {
+   3.848057036116879*^9, 3.848057036297388*^9}, {3.848057338848181*^9, 
+   3.848057340360867*^9}, {3.8480573875639467`*^9, 3.848057388219248*^9}, {
+   3.848057612899027*^9, 3.84805761414158*^9}, {3.848064238034532*^9, 
+   3.8480642409161177`*^9}},ExpressionUUID->"2b9840a6-ebcb-420f-b22b-\
+1b21e31630dd"],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{
+  Inherited, 3},ExpressionUUID->"4c505b60-65cc-44a0-8661-1a3fc2295532"],
+
+Cell[BoxData[
+ RowBox[{"TotalAmplitude", "=", 
+  RowBox[{"FullSimplify", "[", 
+   RowBox[{
+   "contact", "+", "higgst", "+", "gammat", "+", " ", "zetat", "+", "higgsu", 
+    "+", "gammau", "+", "zetau"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8480561374314947`*^9, 
+  3.848056186760728*^9}},ExpressionUUID->"5e09366d-0ad5-4fdf-93f3-\
+a68468192359"]
+},
+WindowSize->{1848, 1016},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+Magnification:>0.9 Inherited,
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 855, 13, 96, "Input",ExpressionUUID->"901cf792-2c58-4f41-b7df-f1ed9a795831"],
+Cell[1416, 35, 331, 10, 5, "Text",ExpressionUUID->"6013cf94-514b-4482-b07f-eb0353251707"],
+Cell[1750, 47, 1164, 31, 140, "Input",ExpressionUUID->"ab257168-fb5e-4451-9a83-e9fd331a8562"],
+Cell[2917, 80, 1619, 40, 162, "Input",ExpressionUUID->"636ff957-a0f3-4caf-b6cd-717dd18cc4d1"],
+Cell[4539, 122, 331, 10, 5, "Text",ExpressionUUID->"ee37718e-f450-475d-9606-f1a112582cd2"],
+Cell[4873, 134, 1208, 32, 118, "Input",ExpressionUUID->"93714fd2-7034-4788-838f-b9f3e533c579"],
+Cell[6084, 168, 994, 21, 74, "Input",ExpressionUUID->"3e9ba376-9f70-433a-954c-02c1da4da0da"],
+Cell[7081, 191, 331, 10, 5, "Text",ExpressionUUID->"a5b1650a-f5e1-4c1c-9eed-0ba96940810b"],
+Cell[7415, 203, 1878, 47, 184, "Input",ExpressionUUID->"23f8283b-e76d-4876-bd5b-093822cc3ecf"],
+Cell[9296, 252, 331, 10, 5, "Text",ExpressionUUID->"452f464a-f41a-4a1b-8de6-49205f5f49ba"],
+Cell[9630, 264, 1672, 44, 184, "Input",ExpressionUUID->"46445418-2cec-46c7-802f-1c8408c0c71a"],
+Cell[11305, 310, 331, 10, 5, "Text",ExpressionUUID->"6c2bd203-f4d6-4edb-93ec-9b9e48df915c"],
+Cell[11639, 322, 1682, 44, 184, "Input",ExpressionUUID->"e9ee266a-7cc9-44b0-bc0a-e66a4f86381e"],
+Cell[13324, 368, 331, 10, 6, "Text",ExpressionUUID->"d59644e8-d73d-4bc5-9b84-aea3e8421af7"],
+Cell[13658, 380, 1735, 45, 184, "Input",ExpressionUUID->"0643b030-b90f-43e8-902e-f095e8ede73b"],
+Cell[15396, 427, 331, 10, 6, "Text",ExpressionUUID->"2b54d640-31a3-4946-bf39-68c84e773a06"],
+Cell[15730, 439, 1708, 45, 184, "Input",ExpressionUUID->"2b9840a6-ebcb-420f-b22b-1b21e31630dd"],
+Cell[17441, 486, 331, 10, 6, "Text",ExpressionUUID->"4c505b60-65cc-44a0-8661-1a3fc2295532"],
+Cell[17775, 498, 351, 8, 29, "Input",ExpressionUUID->"5e09366d-0ad5-4fdf-93f3-a68468192359"]
+}
+]
+*)
+
