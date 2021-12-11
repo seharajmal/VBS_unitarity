@@ -6,13 +6,13 @@ In this repo we are going to collect: MG datacards, plotting tools from ROOT and
 # Log Book
 Please keep this Log Book up to date, so can remember what's happening!
 
-Codici SM/SMEFT:
-Codici di Mathematica per la generazione di diagrammi e ampiezze dei processi VBS ssWW nel caso SM; vengono considerate diverse
-combinazioni di polarizzazioni degli stati iniziali e finali (+-+-, ++++, 0000, 0+0+,0++0, +--+).
+FeynArts Models:
+Modelli EFT compatibili con FeynArts e FormCalc. 
+
+
 
 gridpack SSWW:
 Cards ufficiali di CMS per la generazione di processi VBS ssWW con MadGraph.
 
 combine:
-Tools per la creazione delle datacards per combine, per il calcolo della significance di segnali SM+EFT e (in un futuro prossimo) per
-ottenere i plot della likelihood.
+Tools per l'analisi (codici c++ per la produzione delle distribuzioni d'interesse, plotter degli intervalli di confidenza, tool per ottenere i Likelihood Scan con combine)
