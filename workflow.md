@@ -17,7 +17,7 @@ cd work
 
 tar xf ../*.xz
 
-step 3: assign vlaues to mentioned varaiables according to your need.
+step 3: assign vlaues to mentioned variables according to your need.
 
 NEVENTS=10000
 RANDOMSEED=12345
